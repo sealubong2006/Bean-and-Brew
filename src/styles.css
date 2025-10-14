@@ -9,7 +9,7 @@
 
 
 .bg-image {
-    background-image: url("/public/images/Homepage-Background.jpg");
+    background-image: url("../public/images/Homepage-Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
