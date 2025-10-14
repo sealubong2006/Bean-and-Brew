@@ -1,0 +1,15 @@
+.logo {
+    max-height: 100px;
+}
+
+.d-flex {
+    justify-content: flex-end;
+}
+
+
+
+.bg-image {
+    background-image: url("/public/images/Homepage-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

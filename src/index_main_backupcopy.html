@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bean & Brew</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <div class="container-fluid bg-image">
+        <div class="container-fluid">
+            <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between border-bottom py-3 mb-4">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <a href="/" class="d-inline-flex text-white text-decoration-none">
+                        <img src="logo.png" class="logo">
+                    </a>
+                </div>
+                <button class="btn text-white d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
+                    <li><a href="#" class="nav-link text-white px-2">Home</a></li>
+                    <li><a href="#" class="nav-link text-white px-2">Features</a></li>
+                    <li><a href="#" class="nav-link text-white px-2">Pricing</a></li>
+                    <li><a href="#" class="nav-link text-white px-2">FAQs</a></li>
+                    <li><a href="#" class="nav-link text-white px-2">About</a></li>
+                </ul>
+                <div class="col-md-3 text-end d-none d-md-block">
+                </div>
+            </header>
+            <div class="text-secondary text-center">
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Account</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item mt-3">
+                    <button type="button" class="btn btn-primary w-100">Sign-up</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Dark color hero</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4">lol</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+                    <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
