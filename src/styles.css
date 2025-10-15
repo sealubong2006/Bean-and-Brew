@@ -6,10 +6,14 @@
     justify-content: flex-end;
 }
 
-
-
 .bg-image {
     background-image: url("../public/images/Homepage-Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.shorter-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
