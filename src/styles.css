@@ -1,19 +1,46 @@
-.logo {
-    max-height: 100px;
-}
-
-.d-flex {
-    justify-content: flex-end;
-}
-
+/* Background setup */
 .bg-image {
-    background-image: url("../public/images/Homepage-Background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../public/images/Homepage-Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.shorter-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 15px;
+/* Logo styling */
+.logo {
+  max-height: 100px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive scaling */
+@media (max-width: 992px) {
+  .logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-height: 65px;
+  }
+  header {
+    text-align: center;
+  }
+  .logo-container {
+    justify-content: center;
+  }
+  hr {
+    margin-top: 1rem;
+  }
+}
+
+/* Adjust nav link hover */
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Adjust account button */
+.btn-outline-light {
+  border-radius: 10px;
+  font-weight: 500;
 }
