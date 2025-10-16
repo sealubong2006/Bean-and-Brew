@@ -1,18 +1,70 @@
-/* Background setup */
 .bg-image {
   background-image: url("../public/images/Homepage-Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
-/* Logo styling */
+
 .logo {
   max-height: 100px;
   transition: all 0.3s ease;
 }
 
-/* Responsive scaling */
+
+
+.menu-button:hover{
+  background-color: #987654;
+  color: white !important;
+}
+
+.sub-button:hover{
+  background-color: #b9a189;
+  color: white !important;
+}
+
+#tabs {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.nav-link-hover:hover .dropdown-menu {
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-link-animate {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-link-animate::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.2s ease;
+}
+
+.nav-link-hover:hover .nav-link-animate::after {
+  width: 100%;
+}
+
+.image-effect {
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.image-effect:hover{
+  transform: scale(1.07);
+}
+
 @media (max-width: 992px) {
   .logo {
     max-height: 80px;
@@ -34,13 +86,18 @@
   }
 }
 
-/* Adjust nav link hover */
-.nav-link:hover {
-  text-decoration: underline;
-}
-
-/* Adjust account button */
 .btn-outline-light {
   border-radius: 10px;
   font-weight: 500;
 }
+
+.top-one{
+  width: 85%;
+}
+
+@media screen and (max-width: 400px) and (max-height: 900px) {
+  #hero-media {
+    padding-left: 0 !important;
+  }
+}
+
