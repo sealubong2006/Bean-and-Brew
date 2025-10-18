@@ -1,175 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bean & Brew | Legal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="legalpage.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bean & Brew | Location</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="location.css" />
 </head>
+
 <body>
+  <a id="top"></a>
+  <div class="container-fluid bg-image text-white">
+    <!-- Navbar Section -->
+    <header class="container-fluid top-one py-3">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <div class="logo-container d-flex align-items-center">
+          <a href="homepage.html">
+            <img src="../public/images/B&B-Logo.png" class="logo" alt="Bean & Brew Logo" />
+          </a>
+        </div>
 
-        <div class="container-fluid bg-image text-white">
-        <!-- Navbar Section -->
-            <header class="container-fluid top-one py-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <!-- Logo -->
-                    <div class="logo-container d-flex align-items-center">
-                        <a href="homepage.html">
-                            <img src="../public/images/B&B-Logo.png" class="logo" alt="Bean & Brew Logo">
-                        </a>
+        <!-- Mobile icons -->
+        <div class="d-md-none d-flex align-items-center">
+          <div class="dropdown me-3">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+              <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
+            </ul>
+          </div>
+
+          <button class="btn text-white fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            ☰
+          </button>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="d-none d-md-flex flex-grow-1 align-items-center justify-content-between gap-4" id="tabs">
+          <div></div>
+          <ul class="nav mb-0" style="font-size: 1.5rem;">
+            <li class="nav-item nav-link-hover">
+              <a class="nav-link text-white nav-link-animate" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item dropdown nav-link-hover">
+              <a class="nav-link text-white nav-link-animate dropdown-toggle" href="#" data-bs-toggle="dropdown">Order</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item nav-button" href="#">Menu</a></li>
+                <li><a class="dropdown-item nav-button" href="#">Bakery</a></li>
+                <li><a class="dropdown-item nav-button" href="#">Hampers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown nav-link-hover">
+              <a class="nav-link text-white nav-link-animate dropdown-toggle" href="location.html" data-bs-toggle="dropdown"><strong>Locations</strong></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item nav-button" href="#Leeds">Leeds</a></li>
+                <li><a class="dropdown-item nav-button" href="#Harrogate">Harrogate</a></li>
+                <li><a class="dropdown-item nav-button" href="#Knaresborough">Knaresborough Castle</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-link-hover">
+              <a class="nav-link text-white nav-link-animate" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+              <img src="../public/images/user.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2" />
+              <span class="p-1" style="font-size: 1.3rem">Account</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+              <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <hr class="mt-3 mb-3 border-light opacity-75" />
+    </header>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Menu</a></li>
+          <li><a class="nav-link" href="#">Locations</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+          <li class="mt-3">
+            <button type="button" class="btn w-100 main-button" data-bs-toggle="modal" data-bs-target="#registerModal">Sign-up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container-fluid d-flex align-items-center hero-section">
+      <div class="container text-start ps-md-5" id="hero-media">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white hero-text">FIND YOUR <br />NEAREST CAFÈ</h1>
+          <p class="fs-5 mb-4 text-light">Explore our locations across England!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="container-fluid" id="Leeds">
+            <div class="container">
+                <div class="row align-items-center px-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-5">
+                        <img src="../public/images/Leeds-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
                     </div>
-
-                    <!-- Account dropdown + Hamburger (visible only on small screens) -->
-                    <div class="d-md-none d-flex align-items-center">
-                    <!-- Account dropdown -->
-                        <div class="dropdown me-3">
-                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Leeds, England</h1>
+                            <hr class="opacity-75" style="border: 1px dotted #987654;">
+                        <p class="lead">Calverley Street, <br> Leeds, West Yorkshire, <br> LS1 3BR</p>
+                            <hr class="opacity-75" style="border: 1px dotted #987654;">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                            <a href="https://www.google.com/maps/place/Leeds,+UK" target="_blank">
+                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Signin</a></li>
-                            </ul>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Leeds,+UK" target="_blank">
+                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
+                            </a>
                         </div>
-
-                        <!-- Hamburger button -->
-                        <button class="btn text-white fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            ☰
-                        </button>
                     </div>
-
-                    <!-- Nav links for medium and larger screens -->
-                    <nav class="d-none d-md-flex flex-grow-1 align-items-center justify-content-between gap-4" id="tabs">
-                        <div></div>
-                        <ul class="nav mb-0" style="font-size: 1.5rem;">
-                            <li class="nav-item nav-link-hover">
-                                <a class="nav-link text-white nav-link-animate" href="homepage.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown nav-link-hover">
-                                <a class="nav-link text-white nav-link-animate" href="#">Order</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item nav-button" href="#">Menu</a></li>
-                                    <li><a class="dropdown-item nav-button" href="#">Bakery</a></li>
-                                    <li><a class="dropdown-item nav-button" href="#">Hampers</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown nav-link-hover">
-                                <a class="nav-link text-white nav-link-animate" href="location.html">Locations</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item nav-button" href="location.html#Leeds">Leeds</a></li>
-                                    <li><a class="dropdown-item nav-button" href="location.html#Harrogate">Harrogate</a></li>
-                                    <li><a class="dropdown-item nav-button" href="location.html#Knaresborough">Knaresborough Castle</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item nav-link-hover">
-                                <a class="nav-link text-white nav-link-animate" href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                        <div class="dropdown">
-                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../public/images/user.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
-                                <span class="p-1" style="font-size: 1.3rem;">Account</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                                <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin" href="#">Login</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Register</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-
-                <!-- Divider line -->
-                <hr class="mt-3 mb-3 border-light opacity-75">
-            </header>
-
-            <!-- Offcanvas menu (mobile only) -->
-            <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item mt-3">
-                            <button type="button main-button" class="btn w-100">Sign-up</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Hero Section -->
-            <div class="container-fluid d-flex align-items-center justify-content-sm-start" style="min-height: 87.35vh;" >
-                <div class="container-fluid">
-                    <section class="text-start" style="padding-left: 7%; " id="hero-media">
-                        <div class="py-5">
-                            <h1 class="display-5 fw-bold text-white" style="font-size: 5.5rem;">LEGAL <br> & PRIVACY</h1>
-                            <p class="fs-5 mb-4 text-light">Clear policies. Honest practices. Your peace of mind.</p>
-                        </div>
-                    </section>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="container d-flex flex-column align-items-start justify-content-md-start pt-5" id="Terms&Conditions">
-                <h1><strong>Terms and Conditions</strong></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta similique, voluptate quia ex eos nisi tempora fuga autem, beatae corrupti doloribus tempore? Vel fugiat porro laudantium neque, rerum sint.
-                Alias animi sapiente ut odio blanditiis est accusantium esse. Nam enim, exercitationem cum voluptate alias labore incidunt natus ipsa sint nesciunt necessitatibus error dignissimos a minima, possimus soluta asperiores totam?
-                Fugit ab illum ullam quis minus veritatis? Ducimus doloribus officiis facilis blanditiis rerum. Doloribus exercitationem voluptate deleniti odio eos vitae impedit non quia fuga repudiandae. Voluptate numquam sit in dolores.
-                Sapiente voluptatem accusamus dolor, praesentium laborum, laboriosam et aliquam adipisci hic quibusdam suscipit ducimus expedita. Neque pariatur et similique fugiat voluptatem unde, id, vero laboriosam nesciunt, reprehenderit aliquam earum numquam.
-                Quo consequuntur nobis in quam officiis, aperiam consequatur sed est atque eligendi aspernatur totam laborum aliquid repudiandae. Exercitationem voluptatem illum laborum nobis fugit, ratione culpa autem, ex quidem mollitia cupiditate.
-                Consequatur, eum? Debitis autem totam earum ad expedita impedit quam recusandae numquam at possimus. Aut cupiditate blanditiis beatae nisi porro quos soluta sed, quibusdam eos id, saepe vel, obcaecati eaque.
-                Eveniet saepe labore perferendis quasi illo modi veniam ab minus adipisci, repellat qui eum voluptatem voluptate odit expedita provident est earum, ut aut, accusantium ullam dolore officia ipsa? Aliquid, unde?
-                Fuga ad dolore maxime modi deleniti earum maiores nam et sapiente, tempora quas! Officiis possimus consectetur neque quia odit praesentium quae expedita amet. Eaque ad hic voluptas perspiciatis sapiente labore.
-                Vero, excepturi itaque consectetur dolorum porro pariatur iure impedit quo ipsa, totam corrupti magni, suscipit fuga inventore? Beatae consequuntur facere, at eum labore architecto delectus, laudantium saepe ratione velit accusantium!
-                A nobis, non fugiat illum, ipsa mollitia cum similique doloribus quam aliquam vero esse? Iusto consequatur quod veniam dolores ratione vel, reiciendis, animi eligendi veritatis libero, maiores tenetur commodi ipsa!
-                Adipisci blanditiis autem sapiente? Similique tempore tenetur ipsam praesentium eaque labore, facilis facere excepturi magnam non natus esse optio ullam, quisquam eum rem. Porro, beatae debitis culpa voluptate nihil error.
-                Minima eos neque in eius, unde culpa hic provident placeat qui obcaecati officia sapiente enim asperiores, mollitia nobis, eaque sint vero cumque. Natus, ut dolorum labore sequi laborum quos nostrum.
-                Alias vitae esse iste, ullam laudantium obcaecati voluptates quia molestias itaque molestiae totam, quae minima corrupti eos, harum quis magni odit labore. Debitis numquam placeat facilis modi sed illo optio!
-                </p>
-            </div>  
-            <div class="container d-flex flex-column align-items-start justify-content-md-start py-2" id="CookiesPolicy">
-                <h1><strong>Cookies Policy</strong></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iure cum impedit vitae sit doloremque commodi, assumenda voluptates dolores obcaecati natus cumque? Numquam vero, laudantium quos rerum dolores porro soluta.
-                Quia cum consectetur architecto eum voluptatum officiis possimus aspernatur commodi hic animi repellendus perspiciatis soluta quis fugit, id delectus, sequi, ipsam eius totam quos quibusdam voluptates sint deserunt enim. Natus?
-                Officia maiores et adipisci dolores odit aliquam, quia voluptate sed tenetur distinctio animi fugit quis cumque a? Voluptas, enim itaque doloribus maxime nisi quos illum magnam pariatur neque, suscipit veniam?
-                Minus doloremque distinctio laborum odit quo accusamus nam voluptatum cupiditate tenetur adipisci odio saepe repudiandae totam autem numquam molestiae vitae facilis quam voluptate animi, delectus velit mollitia illo eum? Rem?
-                Nihil eveniet, vitae enim facilis sequi ipsa dignissimos pariatur cupiditate dolores incidunt sed fuga repudiandae quia architecto. Vero fugit corporis, officia architecto dolorem aliquid voluptatem omnis officiis aut ducimus nisi.
-                Doloribus reprehenderit corporis, sit saepe eum est dolores harum quo adipisci, fuga quibusdam provident ex perferendis aliquid enim iste? Placeat sequi maxime recusandae, alias possimus facilis. Natus eveniet illo veritatis?
-                Aliquam modi ea rerum iure expedita sunt sed odit voluptate. Cum quae amet impedit sapiente quibusdam officia iusto neque. Iusto saepe illum veniam voluptatum commodi! Asperiores repellat quisquam fugit hic.
-                Enim saepe perferendis labore ut recusandae earum at eius! Facilis debitis recusandae, itaque eum dolores pariatur omnis sequi error aut enim. Ipsam tempora odit quibusdam error maxime quia libero voluptatibus?
-                Libero, iure. Iure, ea quam architecto praesentium exercitationem perspiciatis accusantium debitis sed recusandae reiciendis quae. Aliquam, dignissimos eos voluptate illo veniam dolorem suscipit natus possimus facere, repellat sed. Expedita, rem!
-                Eaque molestiae accusantium, earum sit impedit nesciunt, nam ipsa cumque quo consectetur natus adipisci aliquid modi odit magnam libero quibusdam. Accusamus voluptatem recusandae, labore nemo veniam inventore eum asperiores velit.
-                </p>
+        <div class="container">
+            <hr class="mt-3 opacity-50" style="border: 2px solid #5a482d;">
+            <hr class="mb-3 opacity-50" style="border: 2px solid #5a482d;">
+        </div>
+
+        <div class="container-fluid" id="Harrogate">
+            <div class="container">
+                <div class="row align-items-center px-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-5">
+                        <img src="../public/images/Harrogate-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Harrogate, England</h1>
+                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                        <p class="lead">Parliament Street, <br> Harrogate, <br> HG1 2RE</p>
+                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                            <a href="https://www.google.com/maps/place/Harrogate,+UK" target="_blank">
+                                <button type="button" class="btn btn-lg main-button px-2 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
+                            </a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Harrogate,+UK" target="_blank">
+                                <button type="button" class="btn btn-lg main-button px-4 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container d-flex flex-column align-items-start justify-content-md-start py-2" id="PrivacyPolicy">
-                <h1><strong>Privacy Policy</strong></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, expedita nobis! Dicta cum fuga repellat recusandae repudiandae similique, perspiciatis at reprehenderit rerum maxime beatae soluta sequi facilis eum velit. Aut.
-                Quisquam ducimus nemo nam omnis necessitatibus temporibus eveniet voluptatem nulla, sed dolore fugiat deleniti expedita vitae quo quidem qui numquam, odio, error modi corporis quibusdam molestias facere perspiciatis. Doloribus, magni?
-                Magnam quisquam laudantium placeat soluta, possimus cupiditate unde quis nihil, quos saepe quidem, iusto veniam nostrum incidunt officiis ad voluptatibus quas atque cumque fugit consectetur. Deserunt adipisci dolores totam tenetur?
-                Aperiam eveniet incidunt dicta nemo vero magni labore non voluptatem possimus, expedita blanditiis exercitationem. Aut tempora vero a qui nisi ipsum quisquam? Minima odio rem esse error non deserunt quidem.
-                Temporibus eos quas sint ab nesciunt omnis, eveniet odit inventore, impedit dicta repellendus beatae reiciendis quod porro velit aperiam harum molestias officia unde recusandae similique sapiente ipsam dolore. Quos, in.
-                Officia, dignissimos repellat. Sint eaque ex tempora accusamus dignissimos minus, corrupti unde architecto incidunt aspernatur voluptates dolor quibusdam, pariatur laborum culpa dolore suscipit adipisci. Consequuntur sapiente esse soluta repellendus dolorum?
-                Explicabo et error beatae maiores totam suscipit pariatur necessitatibus odit. Error voluptatibus soluta amet quisquam quasi itaque, dignissimos repellendus ullam fugiat est nulla harum similique sapiente necessitatibus fuga pariatur architecto?
-                Totam officia repudiandae voluptatibus ipsum ratione est, a sint quo quidem nostrum fugit illum rerum accusamus, dolorem amet. Et quaerat explicabo magni dignissimos est odit obcaecati vitae blanditiis placeat rem?
-                </p>
-            </div>
-            <div class="container d-flex flex-column align-items-start justify-content-md-start py-2 mb-4" id="AUP">
-                <h1><strong>Acceptable Use Policy</strong></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse magni accusamus officia ipsum dolorum! Ratione maiores adipisci veniam, maxime earum deserunt vitae facere necessitatibus reprehenderit aliquid minus sunt doloremque sed.
-                Repellat aliquid distinctio eius hic ut beatae in quisquam. Explicabo ab quia soluta suscipit excepturi maxime ut sequi ipsa rerum culpa doloremque nobis rem quidem, error exercitationem eos, non facilis.
-                Odit voluptatum, corporis laudantium minus tenetur atque veniam, voluptatibus aliquid libero cumque doloribus rerum quis, facere debitis fugiat vitae ea enim dolorem explicabo. Eligendi, dolores. Quod aperiam corporis accusantium tempore?
-                Eveniet vitae consequatur sint, amet aut laborum maiores expedita ad, alias, excepturi a. Saepe laboriosam, ea fuga sint, perferendis nulla commodi animi dicta maxime nisi quod error maiores quas aliquam.
-                Eaque, aliquid! Voluptate minima ducimus accusantium sapiente eum assumenda ut! Deserunt qui veritatis, eos modi delectus minus? Sed molestias quaerat, libero, ipsum dolorem aspernatur magni, architecto illo repellendus fugit aperiam.
-                </p>
+        </div>
+
+        <div class="container">
+            <hr class="mt-3 opacity-50" style="border: 2px solid #5a482d;">
+            <hr class="mb-3 opacity-50" style="border: 2px solid #5a482d;">
+        </div>
+
+        <div class="container-fluid" id="Knaresborough">
+            <div class="container">
+                <div class="row align-items-center px-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-5">
+                        <img src="../public/images/Harrogate-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Knaresborough Castle, England</h1>
+                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                        <p class="lead"><b>Castle Yard, <br> Knaresborough, <br> HG5 8AS</b></p>
+                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                            <a href="https://www.google.com/maps/place/Knaresborough,+UK" target="_blank">
+                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
+                            </a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Knaresborough+Castle,+HG5+8AS" target="_blank">
+                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -193,13 +213,13 @@
                                     <a href="#" class="nav-link p-0" style="color: bisque;">Hampers</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
+                                    <a href="#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
+                                    <a href="#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="location.html#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
+                                    <a href="#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
                                 </li>
                                 <li class="nav-item mb-2">
                                     <a href="#" class="nav-link p-0" style="color: bisque;">Contact Us</a>
@@ -223,16 +243,16 @@
                             <h5>Legal</h5>
                             <ul class="nav flex-column"> 
                                 <li class="nav-item mb-2">
-                                    <a href="#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
+                                    <a href="legalpage.html#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="#CookiesPolicy" class="nav-link p-0" style="color: bisque;">Cookie Policy</a>
+                                    <a href="legalpage.html#CookiesPolicy" class="nav-link p-0" style="color: bisque;">Cookie Policy</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="#PrivacyPolicy" class="nav-link p-0" style="color: bisque;">Privacy Policy </a>
+                                    <a href="legalpage.html#PrivacyPolicy" class="nav-link p-0" style="color: bisque;">Privacy Policy </a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="#AUP" class="nav-link p-0" style="color: bisque;">Acceptable Use Policy</a>
+                                    <a href="legalpage.html#AUP" class="nav-link p-0" style="color: bisque;">Acceptable Use Policy</a>
                                 </li>
                             </ul>
                         </div>
@@ -267,74 +287,71 @@
                 </div>
             </div>
 
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="InputUserRegister" class="form-label">Enter a Username</label>
+              <input type="text" class="form-control" id="InputUserRegister" />
+            </div>
+            <div class="mb-3">
+              <label for="InputEmailRegister" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmailRegister" />
+            </div>
+            <div class="mb-3">
+              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
+              <input type="password" class="form-control" id="InputPasswordRegister" />
+            </div>
+            <div class="mb-3">
+              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
+            </div>
+            <button type="submit" class="btn text-white w-100 main-button">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- Register Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Register</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                    <div class="mb-3">
-                        <label for="InputUser" class="form-label">Enter a Username</label>
-                        <input type="text" class="form-control" id="InputUser" aria-describedby="userHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputPassword1" class="form-label">Create a Password</label>
-                        <input type="password" class="form-control" id="InputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputPassword1" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="InputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="Check1">
-                        <label class="form-check-label" for="Check1">Show Password</label>
-                    </div>
-                    <button type="submit" class="btn text-white" style="background-color: #987654; border: 1px solid #987654;">Register</button>
-                    </form>
-                </div>
-                </div>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="InputEmailLogin" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmailLogin" />
             </div>
+            <div class="mb-3">
+              <label for="InputPasswordLogin" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPasswordLogin" />
             </div>
+            <button type="submit" class="btn text-white w-100 main-button">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- Login Modal -->
-            <div class="modal fade" id="staticBackdropLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                    <div class="mb-3">
-                        <label for="InputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="InputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="Check1">
-                        <label class="form-check-label" for="Check1">Show Password</label>
-                    </div>
-                    <button type="submit" class="btn text-white" style="background-color: #987654; border: 1px solid #987654;">Login</button>
-                    </form>
-                </div>
-                </div>
-            </div>
-            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <a id="bottom"></a>
+  <!-- Scroll Buttons -->
+  <div class="scroll-buttons position-fixed d-flex flex-column" style="right: 20px; bottom: 20px; z-index: 1030;">
+    <a href="#top" class="btn btn-lg rounded-circle text-white mb-2" style="background-color: #987654; width: 45px; height: 45px;">↑</a>
+    <a href="#bottom" class="btn btn-lg rounded-circle text-white" style="background-color: #987654; width: 45px; height: 45px;">↓</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
