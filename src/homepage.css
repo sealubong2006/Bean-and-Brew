@@ -12,7 +12,7 @@
 }
 
 .main-button {
-  color: #987654;
+  color: #987654 !important;
   border: 2px solid #987654;
   background: transparent;
 }
