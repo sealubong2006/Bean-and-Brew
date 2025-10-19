@@ -1,174 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bean & Brew | Legal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="legalpage.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bean & Brew | Legal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="legalpage.css">
 </head>
-
 <body>
-  <a id="top"></a>
-  <div class="container-fluid bg-image text-white">
-    <!-- Navbar Section -->
-    <header class="container-fluid top-one py-3">
-      <div class="d-flex justify-content-between align-items-center flex-wrap">
-        <div class="logo-container d-flex align-items-center">
-          <a href="homepage.html">
-            <img src="../public/images/B&B-Logo.png" class="logo" alt="Bean & Brew Logo" />
-          </a>
+
+        <div class="container-fluid bg-image text-white">
+        <!-- Navbar Section -->
+            <header class="container-fluid top-one py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <div class="logo-container d-flex align-items-center">
+                        <a href="homepage.html">
+                            <img src="../public/images/B&B-Logo.png" class="logo" alt="Bean & Brew Logo">
+                        </a>
+                    </div>
+
+                    <!-- Account dropdown + Hamburger (visible only on small screens) -->
+                    <div class="d-md-none d-flex align-items-center">
+                    <!-- Account dropdown -->
+                        <div class="dropdown me-3">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Signin</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Hamburger button -->
+                        <button class="btn text-white fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            ☰
+                        </button>
+                    </div>
+
+                    <!-- Nav links for medium and larger screens -->
+                    <nav class="d-none d-md-flex flex-grow-1 align-items-center justify-content-between gap-4" id="tabs">
+                        <div></div>
+                        <ul class="nav mb-0" style="font-size: 1.5rem;">
+                            <li class="nav-item nav-link-hover">
+                                <a class="nav-link text-white nav-link-animate" href="homepage.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown nav-link-hover">
+                                <a class="nav-link text-white nav-link-animate" href="#">Order</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item nav-button" href="#">Menu</a></li>
+                                    <li><a class="dropdown-item nav-button" href="#">Bakery</a></li>
+                                    <li><a class="dropdown-item nav-button" href="#">Hampers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-link-hover">
+                                <a class="nav-link text-white nav-link-animate" href="location.html">Locations</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item nav-button" href="location.html#Leeds">Leeds</a></li>
+                                    <li><a class="dropdown-item nav-button" href="location.html#Harrogate">Harrogate</a></li>
+                                    <li><a class="dropdown-item nav-button" href="location.html#Knaresborough">Knaresborough Castle</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-link-hover">
+                                <a class="nav-link text-white nav-link-animate" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../public/images/user.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
+                                <span class="p-1" style="font-size: 1.3rem;">Account</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+                                <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin" href="#">Login</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Register</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Divider line -->
+                <hr class="mt-3 mb-3 border-light opacity-75">
+            </header>
+
+            <!-- Offcanvas menu (mobile only) -->
+            <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item mt-3">
+                            <button type="button main-button" class="btn w-100">Sign-up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="container-fluid d-flex align-items-center justify-content-sm-start" style="min-height: 87.35vh;" >
+                <div class="container-fluid">
+                    <section class="text-start" style="padding-left: 7%; " id="hero-media">
+                        <div class="py-5">
+                            <h1 class="display-5 fw-bold text-white" style="font-size: 5.5rem;">LEGAL <br> & PRIVACY</h1>
+                            <p class="fs-5 mb-4 text-light">Clear policies. Honest practices. Your peace of mind.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
 
-        <!-- Mobile account + hamburger -->
-        <div class="d-md-none d-flex align-items-center">
-          <div class="dropdown me-3">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
-              <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2" />
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
-            </ul>
-          </div>
-
-          <button class="btn text-white fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-            ☰
-          </button>
+        <div class="container-fluid">
+            <div class="container d-flex flex-column align-items-start justify-content-md-start pt-5" id="Terms&Conditions">
+                <h1><strong>Terms and Conditions</strong></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta similique, voluptate quia ex eos nisi tempora fuga autem, beatae corrupti doloribus tempore? Vel fugiat porro laudantium neque, rerum sint.
+                Alias animi sapiente ut odio blanditiis est accusantium esse. Nam enim, exercitationem cum voluptate alias labore incidunt natus ipsa sint nesciunt necessitatibus error dignissimos a minima, possimus soluta asperiores totam?
+                Fugit ab illum ullam quis minus veritatis? Ducimus doloribus officiis facilis blanditiis rerum. Doloribus exercitationem voluptate deleniti odio eos vitae impedit non quia fuga repudiandae. Voluptate numquam sit in dolores.
+                Sapiente voluptatem accusamus dolor, praesentium laborum, laboriosam et aliquam adipisci hic quibusdam suscipit ducimus expedita. Neque pariatur et similique fugiat voluptatem unde, id, vero laboriosam nesciunt, reprehenderit aliquam earum numquam.
+                Quo consequuntur nobis in quam officiis, aperiam consequatur sed est atque eligendi aspernatur totam laborum aliquid repudiandae. Exercitationem voluptatem illum laborum nobis fugit, ratione culpa autem, ex quidem mollitia cupiditate.
+                Consequatur, eum? Debitis autem totam earum ad expedita impedit quam recusandae numquam at possimus. Aut cupiditate blanditiis beatae nisi porro quos soluta sed, quibusdam eos id, saepe vel, obcaecati eaque.
+                Eveniet saepe labore perferendis quasi illo modi veniam ab minus adipisci, repellat qui eum voluptatem voluptate odit expedita provident est earum, ut aut, accusantium ullam dolore officia ipsa? Aliquid, unde?
+                Fuga ad dolore maxime modi deleniti earum maiores nam et sapiente, tempora quas! Officiis possimus consectetur neque quia odit praesentium quae expedita amet. Eaque ad hic voluptas perspiciatis sapiente labore.
+                Vero, excepturi itaque consectetur dolorum porro pariatur iure impedit quo ipsa, totam corrupti magni, suscipit fuga inventore? Beatae consequuntur facere, at eum labore architecto delectus, laudantium saepe ratione velit accusantium!
+                A nobis, non fugiat illum, ipsa mollitia cum similique doloribus quam aliquam vero esse? Iusto consequatur quod veniam dolores ratione vel, reiciendis, animi eligendi veritatis libero, maiores tenetur commodi ipsa!
+                Adipisci blanditiis autem sapiente? Similique tempore tenetur ipsam praesentium eaque labore, facilis facere excepturi magnam non natus esse optio ullam, quisquam eum rem. Porro, beatae debitis culpa voluptate nihil error.
+                Minima eos neque in eius, unde culpa hic provident placeat qui obcaecati officia sapiente enim asperiores, mollitia nobis, eaque sint vero cumque. Natus, ut dolorum labore sequi laborum quos nostrum.
+                Alias vitae esse iste, ullam laudantium obcaecati voluptates quia molestias itaque molestiae totam, quae minima corrupti eos, harum quis magni odit labore. Debitis numquam placeat facilis modi sed illo optio!
+                </p>
+            </div>  
+            <div class="container d-flex flex-column align-items-start justify-content-md-start py-2" id="CookiesPolicy">
+                <h1><strong>Cookies Policy</strong></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iure cum impedit vitae sit doloremque commodi, assumenda voluptates dolores obcaecati natus cumque? Numquam vero, laudantium quos rerum dolores porro soluta.
+                Quia cum consectetur architecto eum voluptatum officiis possimus aspernatur commodi hic animi repellendus perspiciatis soluta quis fugit, id delectus, sequi, ipsam eius totam quos quibusdam voluptates sint deserunt enim. Natus?
+                Officia maiores et adipisci dolores odit aliquam, quia voluptate sed tenetur distinctio animi fugit quis cumque a? Voluptas, enim itaque doloribus maxime nisi quos illum magnam pariatur neque, suscipit veniam?
+                Minus doloremque distinctio laborum odit quo accusamus nam voluptatum cupiditate tenetur adipisci odio saepe repudiandae totam autem numquam molestiae vitae facilis quam voluptate animi, delectus velit mollitia illo eum? Rem?
+                Nihil eveniet, vitae enim facilis sequi ipsa dignissimos pariatur cupiditate dolores incidunt sed fuga repudiandae quia architecto. Vero fugit corporis, officia architecto dolorem aliquid voluptatem omnis officiis aut ducimus nisi.
+                Doloribus reprehenderit corporis, sit saepe eum est dolores harum quo adipisci, fuga quibusdam provident ex perferendis aliquid enim iste? Placeat sequi maxime recusandae, alias possimus facilis. Natus eveniet illo veritatis?
+                Aliquam modi ea rerum iure expedita sunt sed odit voluptate. Cum quae amet impedit sapiente quibusdam officia iusto neque. Iusto saepe illum veniam voluptatum commodi! Asperiores repellat quisquam fugit hic.
+                Enim saepe perferendis labore ut recusandae earum at eius! Facilis debitis recusandae, itaque eum dolores pariatur omnis sequi error aut enim. Ipsam tempora odit quibusdam error maxime quia libero voluptatibus?
+                Libero, iure. Iure, ea quam architecto praesentium exercitationem perspiciatis accusantium debitis sed recusandae reiciendis quae. Aliquam, dignissimos eos voluptate illo veniam dolorem suscipit natus possimus facere, repellat sed. Expedita, rem!
+                Eaque molestiae accusantium, earum sit impedit nesciunt, nam ipsa cumque quo consectetur natus adipisci aliquid modi odit magnam libero quibusdam. Accusamus voluptatem recusandae, labore nemo veniam inventore eum asperiores velit.
+                </p>
+            </div>
+            <div class="container d-flex flex-column align-items-start justify-content-md-start py-2" id="PrivacyPolicy">
+                <h1><strong>Privacy Policy</strong></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, expedita nobis! Dicta cum fuga repellat recusandae repudiandae similique, perspiciatis at reprehenderit rerum maxime beatae soluta sequi facilis eum velit. Aut.
+                Quisquam ducimus nemo nam omnis necessitatibus temporibus eveniet voluptatem nulla, sed dolore fugiat deleniti expedita vitae quo quidem qui numquam, odio, error modi corporis quibusdam molestias facere perspiciatis. Doloribus, magni?
+                Magnam quisquam laudantium placeat soluta, possimus cupiditate unde quis nihil, quos saepe quidem, iusto veniam nostrum incidunt officiis ad voluptatibus quas atque cumque fugit consectetur. Deserunt adipisci dolores totam tenetur?
+                Aperiam eveniet incidunt dicta nemo vero magni labore non voluptatem possimus, expedita blanditiis exercitationem. Aut tempora vero a qui nisi ipsum quisquam? Minima odio rem esse error non deserunt quidem.
+                Temporibus eos quas sint ab nesciunt omnis, eveniet odit inventore, impedit dicta repellendus beatae reiciendis quod porro velit aperiam harum molestias officia unde recusandae similique sapiente ipsam dolore. Quos, in.
+                Officia, dignissimos repellat. Sint eaque ex tempora accusamus dignissimos minus, corrupti unde architecto incidunt aspernatur voluptates dolor quibusdam, pariatur laborum culpa dolore suscipit adipisci. Consequuntur sapiente esse soluta repellendus dolorum?
+                Explicabo et error beatae maiores totam suscipit pariatur necessitatibus odit. Error voluptatibus soluta amet quisquam quasi itaque, dignissimos repellendus ullam fugiat est nulla harum similique sapiente necessitatibus fuga pariatur architecto?
+                Totam officia repudiandae voluptatibus ipsum ratione est, a sint quo quidem nostrum fugit illum rerum accusamus, dolorem amet. Et quaerat explicabo magni dignissimos est odit obcaecati vitae blanditiis placeat rem?
+                </p>
+            </div>
+            <div class="container d-flex flex-column align-items-start justify-content-md-start py-2 mb-4" id="AUP">
+                <h1><strong>Acceptable Use Policy</strong></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse magni accusamus officia ipsum dolorum! Ratione maiores adipisci veniam, maxime earum deserunt vitae facere necessitatibus reprehenderit aliquid minus sunt doloremque sed.
+                Repellat aliquid distinctio eius hic ut beatae in quisquam. Explicabo ab quia soluta suscipit excepturi maxime ut sequi ipsa rerum culpa doloremque nobis rem quidem, error exercitationem eos, non facilis.
+                Odit voluptatum, corporis laudantium minus tenetur atque veniam, voluptatibus aliquid libero cumque doloribus rerum quis, facere debitis fugiat vitae ea enim dolorem explicabo. Eligendi, dolores. Quod aperiam corporis accusantium tempore?
+                Eveniet vitae consequatur sint, amet aut laborum maiores expedita ad, alias, excepturi a. Saepe laboriosam, ea fuga sint, perferendis nulla commodi animi dicta maxime nisi quod error maiores quas aliquam.
+                Eaque, aliquid! Voluptate minima ducimus accusantium sapiente eum assumenda ut! Deserunt qui veritatis, eos modi delectus minus? Sed molestias quaerat, libero, ipsum dolorem aspernatur magni, architecto illo repellendus fugit aperiam.
+                </p>
+            </div>
         </div>
-
-        <!-- Desktop Nav -->
-        <nav class="d-none d-md-flex flex-grow-1 align-items-center justify-content-between gap-4" id="tabs">
-          <div></div>
-          <ul class="nav mb-0" style="font-size: 1.5rem;">
-            <li class="nav-item nav-link-hover"><a class="nav-link text-white nav-link-animate" href="homepage.html">Home</a></li>
-            <li class="nav-item dropdown nav-link-hover">
-              <a class="nav-link text-white nav-link-animate dropdown-toggle" href="#" data-bs-toggle="dropdown">Order</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item nav-button" href="#">Menu</a></li>
-                <li><a class="dropdown-item nav-button" href="#">Bakery</a></li>
-                <li><a class="dropdown-item nav-button" href="#">Hampers</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown nav-link-hover">
-              <a class="nav-link text-white nav-link-animate dropdown-toggle" href="location.html">Locations</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item nav-button" href="location.html#Leeds">Leeds</a></li>
-                <li><a class="dropdown-item nav-button" href="location.html#Harrogate">Harrogate</a></li>
-                <li><a class="dropdown-item nav-button" href="location.html#Knaresborough">Knaresborough Castle</a></li>
-              </ul>
-            </li>
-            <li class="nav-item nav-link-hover">
-              <a class="nav-link text-white nav-link-animate" href="#">Contact Us</a>
-            </li>
-          </ul>
-          <div class="dropdown">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
-              <img src="../public/images/user.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2" />
-              <span class="p-1" style="font-size: 1.3rem;">Account</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <hr class="mt-3 mb-3 border-light opacity-75" />
-    </header>
-
-    <!-- Offcanvas Menu -->
-    <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasNavbar">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li><a class="nav-link" href="homepage.html">Home</a></li>
-          <li><a class="nav-link" href="#">Menu</a></li>
-          <li><a class="nav-link" href="location.html">Locations</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
-          <li class="mt-3">
-            <button type="button" class="btn w-100 main-button" data-bs-toggle="modal" data-bs-target="#registerModal">Sign-up</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Hero -->
-    <div class="container-fluid d-flex align-items-center hero-section">
-      <div class="container text-start ps-md-5" id="hero-media">
-        <div class="py-5">
-          <h1 class="display-5 fw-bold text-white hero-text">LEGAL<br>& PRIVACY</h1>
-          <p class="fs-5 mb-4 text-light">Clear policies. Honest practices. Your peace of mind.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Legal Sections -->
-  <div class="container-fluid py-5 bg-white text-dark">
-    <div class="container">
-      <section id="Terms&Conditions" class="mb-5">
-        <h1><strong>Terms and Conditions</strong></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eaque quia voluptatem sed maiores vero est, sapiente suscipit praesentium molestias maxime voluptatum, iusto dolores dolor atque deleniti libero ut deserunt?
-        Eveniet autem blanditiis eum repellat in quaerat quae ut. Id vero doloremque veritatis, ab repellendus necessitatibus optio dolorum excepturi! Nemo atque nulla vitae veniam omnis at tenetur sed itaque. Cum.
-        Dolore modi, explicabo, id doloremque aut veritatis quis quisquam sequi maxime odio ab sunt repellat nesciunt, reprehenderit expedita culpa illo sit commodi quia eum itaque temporibus libero quas! Non, adipisci.
-        Laborum facere nesciunt quod non iste illo consequatur voluptas, maiores molestias officia modi, quidem quibusdam nulla consequuntur nihil enim fugit tenetur ipsa veritatis vero rerum ut quam necessitatibus? Ratione, nostrum!
-        Quasi nihil eius ipsum, porro debitis cum sint, maxime similique aliquam ipsam ab exercitationem dolorum quisquam aut laboriosam rem architecto voluptatibus mollitia tenetur minus nulla dolore reiciendis dicta sunt? Dolore!
-        Iure, magnam? Enim rem quos dignissimos incidunt architecto voluptate, placeat ipsam laboriosam dolorem mollitia fugit reiciendis, omnis repellat vero beatae harum amet voluptates expedita. Modi, quas. Error ab eius accusamus.
-        Rerum velit asperiores repellat similique! Repellendus provident, cupiditate eum consequuntur sequi ipsum sint, molestias mollitia unde veniam qui hic quia, eligendi vero odit. Numquam, sunt ex amet magni consectetur asperiores.
-        Beatae accusantium porro error et. Delectus perferendis dignissimos sed dolor saepe consequuntur facere ullam accusamus fugit blanditiis alias qui tempora atque exercitationem officiis, est illo quibusdam provident culpa officia et!
-        Ex quisquam dolore quo accusantium tempore blanditiis ea adipisci commodi laudantium similique consequuntur voluptas cupiditate eligendi necessitatibus quos, delectus deserunt illo? Omnis maiores exercitationem nam aperiam fugit voluptate iusto expedita!
-        Quam assumenda soluta vel tenetur aperiam, consequuntur alias, odio tempore doloribus ipsum animi. Distinctio ab recusandae quam voluptates natus eaque, dolores harum quidem vero illo placeat eos tenetur impedit sed!</p>
-      </section>
-
-      <section id="CookiesPolicy" class="mb-5">
-        <h1><strong>Cookies Policy</strong></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem in eligendi molestias nulla non, officiis earum quas, repellat blanditiis eius architecto maiores ex minus quod mollitia eaque, cumque tempora iste.
-        Modi, doloremque aliquid aut excepturi eligendi provident ipsum minus ullam et id sapiente illo cumque obcaecati! Laborum ipsa alias dolorem harum, animi hic atque cupiditate nobis? Obcaecati laborum assumenda cum?
-        Non alias laborum aliquam optio consequuntur quidem fuga possimus, temporibus magni autem ratione in atque ipsam, illum dolores nam assumenda neque voluptates laboriosam harum? Commodi ex possimus similique esse ipsum!
-        Tenetur, aut odio, commodi repudiandae ducimus sapiente nisi nostrum fugit, quae delectus iure id omnis unde optio repellendus cupiditate autem. Molestiae suscipit impedit, totam accusamus eos perspiciatis cupiditate numquam voluptatibus?
-        Dignissimos harum ipsum ducimus, nihil architecto soluta voluptate deserunt dolorum minus, perspiciatis distinctio nemo fuga quasi aliquam id quaerat sed voluptas. Veritatis numquam iure, ipsum saepe dignissimos consequuntur ullam dolor.
-        Qui necessitatibus voluptatem laborum pariatur quia, modi quasi, vel omnis consequatur odit, delectus sunt explicabo eveniet? Possimus earum placeat ex harum eum odit ab reiciendis, numquam eligendi dolorem animi dicta.
-        Dolorem, soluta nemo! Laborum, saepe modi ullam impedit corrupti, soluta cumque perspiciatis id maxime nobis molestiae eligendi ipsa aut eius blanditiis nemo labore neque minima laudantium veritatis officiis assumenda iste?
-        Cupiditate dolores cum odio maiores, accusamus temporibus! Explicabo consequuntur et libero? Quibusdam harum, dignissimos nihil hic libero, modi totam voluptatum, ratione at quidem sint! Quibusdam, sed! Porro in doloremque quos.
-        Molestias, excepturi possimus esse odit sapiente blanditiis at laborum vero repudiandae consequatur minus, quam ipsum voluptate eius assumenda a vel voluptas id fuga. Expedita placeat dolorem magni enim, veritatis ut.
-        Adipisci laudantium nesciunt repellat dolorem. Beatae officia omnis magnam deserunt modi corporis labore doloremque iusto delectus sequi! Asperiores, at doloremque quod aut repudiandae error dolorum odit non reprehenderit. Dicta, minus.</p>
-      </section>
-
-      <section id="PrivacyPolicy" class="mb-5">
-        <h1><strong>Privacy Policy</strong></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet asperiores iusto rem in voluptatibus repellat corrupti quidem amet quod sequi consequatur, facere reprehenderit magni rerum quis nostrum soluta minus!
-        Sapiente vel perferendis id asperiores mollitia eum doloribus consequuntur non incidunt adipisci provident, illo voluptatibus debitis, aspernatur exercitationem ex veniam reiciendis minus nam dicta earum distinctio aut facilis modi? Nobis!
-        Dolores laudantium nobis quibusdam, mollitia saepe, enim eos et error pariatur magnam dicta officia reiciendis culpa sequi molestiae vel. Laudantium dolore assumenda aspernatur nemo quae quas doloremque, debitis officiis perspiciatis?
-        Sint voluptate quaerat voluptatem nemo necessitatibus alias accusantium quae veritatis consectetur at quasi dignissimos deleniti perspiciatis quis, cum doloremque illo rerum, eaque recusandae ea explicabo magnam qui! Saepe, quasi corrupti.
-        Illum voluptas ut, delectus molestiae molestias laborum incidunt veniam quae quia harum repudiandae inventore, ab perferendis optio distinctio corrupti amet non saepe asperiores similique numquam explicabo tempora maiores quod! Incidunt?
-        Esse quis error ab facere a officia aliquid dignissimos sed obcaecati delectus laborum quo molestias sit magni veritatis eveniet, aperiam molestiae accusantium? Voluptatum illum non, impedit necessitatibus maiores suscipit quaerat.
-        At nihil eum explicabo ab hic obcaecati animi adipisci consequuntur natus iusto nobis excepturi, qui pariatur minima expedita minus quos, sint quibusdam porro vitae quo magni. Magni harum voluptas natus.
-        Eum repellat saepe odit, ab sapiente dolorum totam a cum doloremque rem laudantium vero recusandae labore, dicta iste excepturi amet. Facilis rem quo velit dicta voluptates? Dolor atque nulla delectus.
-        Laborum quo ipsa, qui saepe, molestias accusantium perspiciatis eaque dolorem voluptate, error nihil iure dignissimos natus velit ea. Suscipit expedita iste magni labore sunt officia ratione iure dolorum, esse doloremque!
-        Aliquam possimus iusto officiis temporibus autem error consequatur blanditiis doloremque quasi nesciunt. Suscipit facere iusto ratione, illum labore nulla saepe doloremque rem incidunt iste tempore veritatis doloribus eum ullam at?</p>
-      </section>
-
-      <section id="AUP" class="mb-5">
-        <h1><strong>Acceptable Use Policy</strong></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt assumenda voluptatum culpa veniam, doloremque tenetur accusantium magnam quisquam cumque neque quos asperiores! Ipsa beatae aliquid nulla totam natus perspiciatis sed!
-        Cum suscipit molestiae expedita tempora, alias pariatur error laboriosam. Temporibus sapiente accusamus odit aut, inventore et unde, veritatis nulla nostrum saepe quia. Vitae accusantium fugiat reprehenderit, vel omnis aliquam natus.
-        Itaque, magni cumque. Obcaecati suscipit magnam odit, cupiditate atque fugit ipsum dolor mollitia, molestias error corporis nobis repellat cum, omnis rem optio? Iste nemo nobis ea excepturi provident aliquid rerum.
-        Atque porro maiores autem repellendus nulla nobis perspiciatis voluptates quibusdam quo, adipisci rem cum beatae labore facere? Eveniet tempore doloribus rerum eos consequatur iste nemo? Quidem harum velit omnis eaque?
-        Cupiditate ut accusamus reiciendis nesciunt, aliquid ratione asperiores maxime doloribus deserunt beatae neque quas excepturi quia dolorum corporis magnam, itaque natus eveniet rem, repellat consequuntur totam quo voluptatem est? Suscipit.
-        Repellat ad quod saepe ipsam, consectetur soluta voluptate. Voluptate in aperiam similique tenetur corporis assumenda maxime natus, dolorum enim sapiente obcaecati laudantium excepturi fuga magnam ex repellat? Asperiores, sit animi.
-        Cumque neque corporis vel debitis nisi doloribus quod nobis dolores, illo perspiciatis nihil accusantium in, dicta, eos error inventore facilis. Facere unde error aspernatur eveniet voluptas nobis esse blanditiis suscipit.
-        Possimus est cupiditate adipisci delectus quidem facilis, excepturi, sunt consequuntur ipsa id soluta nemo sint architecto eius ea omnis molestiae repellendus distinctio, doloribus debitis! Placeat, atque. Voluptas laudantium corporis placeat!
-        Consectetur, quas maiores! Facere officiis tempore consequatur rem ab neque? In tempora explicabo, ut accusamus nihil quasi fugit nam, delectus nobis nisi similique a. Mollitia obcaecati eum assumenda adipisci officia.
-        Officia illo nisi sequi ullam saepe quod ratione dolor eos vero qui numquam, excepturi ipsam praesentium aspernatur reprehenderit asperiores dolore nulla unde architecto cupiditate cumque sapiente reiciendis assumenda? Recusandae, aliquam?</p>
-      </section>
-    </div>
-  </div>
 
         <div class="container-fluid" style="background-color:#5a482d;">
             <div class="container">
@@ -217,7 +220,7 @@
                         </div>
 
                         <div class="col-6 col-md-2 mb-3" style="color: bisque;">
-                            <h5><a href="legalpage.html" class="nav-link p-0">Legal</a></h5>
+                            <h5>Legal</h5>
                             <ul class="nav flex-column"> 
                                 <li class="nav-item mb-2">
                                     <a href="#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
@@ -265,71 +268,73 @@
             </div>
 
 
-  <!-- Register Modal -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Register</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputUserRegister" class="form-label">Enter a Username</label>
-              <input type="text" class="form-control" id="InputUserRegister" />
+            <!-- Register Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="InputUser" class="form-label">Enter a Username</label>
+                        <input type="text" class="form-control" id="InputUser" aria-describedby="userHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword1" class="form-label">Create a Password</label>
+                        <input type="password" class="form-control" id="InputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="InputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">Show Password</label>
+                    </div>
+                    <button type="submit" class="btn text-white" style="background-color: #987654; border: 1px solid #987654;">Register</button>
+                    </form>
+                </div>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="InputEmailRegister" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailRegister" />
             </div>
-            <div class="mb-3">
-              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
-              <input type="password" class="form-control" id="InputPasswordRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Register</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Login</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputEmailLogin" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailLogin" />
+            <!-- Login Modal -->
+            <div class="modal fade" id="staticBackdropLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="InputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">Show Password</label>
+                    </div>
+                    <button type="submit" class="btn text-white" style="background-color: #987654; border: 1px solid #987654;">Login</button>
+                    </form>
+                </div>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="InputPasswordLogin" class="form-label">Password</label>
-              <input type="password" class="form-control" id="InputPasswordLogin" />
             </div>
-            <button type="submit" class="btn text-white w-100 main-button">Login</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
-
-    <a id="bottom"></a>
-  <!-- Scroll Buttons -->
-  <div class="scroll-buttons position-fixed d-flex flex-column" style="right: 20px; bottom: 20px; z-index: 1030;">
-    <a href="#top" class="btn btn-lg rounded-circle text-white mb-2" style="background-color: #987654; width: 45px; height: 45px;">↑</a>
-    <a href="#bottom" class="btn btn-lg rounded-circle text-white" style="background-color: #987654; width: 45px; height: 45px;">↓</a>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
