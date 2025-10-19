@@ -163,3 +163,41 @@
     font-size: 1.2rem;
   }
 }
+
+/* Fix navbar layout for medium devices (iPads, foldables, small laptops) */
+/* @media (min-width: 768px) and (max-width: 1200px) {
+  .top-one {
+    width: 95%;
+  }
+
+  header .d-flex {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  nav#tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  nav#tabs ul.nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  nav#tabs .dropdown > a span {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    max-height: 85px;
+    margin-bottom: 0.5rem;
+  }
+
+  hr {
+    margin-top: 0.5rem;
+  }
+} */
