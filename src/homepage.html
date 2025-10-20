@@ -11,8 +11,8 @@
 
     <div class="container-fluid bg-image text-white" id="top">
     <!-- Navbar Section -->
-        <div class="container-fluid top-one py-3">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="container-fluid nav-width py-3">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <!-- Logo -->
                 <div class="logo-container d-flex align-items-center">
                     <a href="homepage.html">
@@ -28,9 +28,9 @@
                             <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Signin</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
                         </ul>
                     </div>
 
@@ -95,10 +95,9 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                     <li class="nav-item mt-3">
                         <button type="button main-button" class="btn w-100">Sign-up</button>
                     </li>
@@ -107,15 +106,13 @@
         </div>
 
         <!-- Hero Section -->
-        <div class="container-fluid d-flex justify-content-sm-start" style="min-height: 87.35vh;" >
-            <div class="container-fluid">
-                <div class="text-start" style="padding-left: 7%; " id="hero-media">
-                    <div class="py-5">
-                        <h1 class="display-5 fw-bold text-white" style="font-size: 5.5rem;">WHERE EVERY <br> CUP TELLS <br> A STORY.</h1>
-                        <p class="fs-5 mb-4 text-light">Pre-order or book today!</p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
-                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Menu</button>
-                        </div>
+        <div class="container-fluid d-flex justify-content-start align-items-center hero-section">
+            <div class="container text-start ps-md-5" id="hero-media" style="max-width: 87%;">
+                <div class="py-3">
+                    <h1 class="display-5 fw-bold text-white hero-text">WHERE EVERY <br />CUP TELLS <br />A STORY.</h1>
+                    <p class="fs-5 mb-4 text-light">Pre-order or book today!</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
+                        <button type="button" class="btn btn-lg main-button fw-bold">Menu</button>
                     </div>
                 </div>
             </div>
@@ -132,7 +129,7 @@
                     <h1 class="display-5 fw-bold text-body-emphasis pt-2 lh-1 mb-3">Book a Space</h1>
                     <p class="lead">Looking for a cosy corner to relax, catch up, or celebrate? Reserve your space with ease and enjoy the warm atmosphere, delicious brews, and friendly vibes.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Book Now</button>
+                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -149,7 +146,7 @@
                     <h1 class="display-5 fw-bold text-body-emphasis pt-2 lh-1 mb-3">Skip the Queue</h1>
                     <p class="lead">Why wait in line when your perfect cup can be ready the moment you arrive? Customise your coffee down to the last detail—from bean type to milk preference—and collect it fresh, fast, and exactly how you like it.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Pre-Order Now</button>
+                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Pre-Order Now</button>
                     </div>
                 </div>
             </div>
@@ -166,7 +163,7 @@
                     <h1 class="display-5 fw-bold text-body-emphasis pt-2 lh-1 mb-3">More Than Just Coffee</h1>
                     <p class="lead">From hearty breakfasts to handcrafted sandwiches, sweet treats to seasonal specials—our menu is packed with flavour. Whether you're craving comfort food or something fresh and vibrant, Bean and Brew serves up more than just your daily caffeine fix. Explore our locally inspired dishes and discover your new favourite bite.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Explore the Menu</button>
+                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Explore the Menu</button>
                     </div>
                 </div>
             </div>
@@ -183,7 +180,7 @@
                     <h1 class="display-5 fw-bold text-body-emphasis pt-2 lh-1 mb-3">Bake With Us</h1>
                     <p class="lead">Discover the joy of baking in our hands-on classes led by passionate local chefs. Whether you're a beginner or a seasoned home baker, you'll learn new techniques, create delicious treats, and take home more than just recipes—take home memories.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Book a Class</button>
+                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Book a Class</button>
                     </div>
                 </div>
             </div>
@@ -200,7 +197,7 @@
                     <h1 class="display-5 fw-bold text-body-emphasis pt-2 lh-1 mb-3">Build Your Hamper</h1>
                     <p class="lead">Mix and match from our selection of handcrafted baked goods to create a hamper that’s perfect for gifting, celebrating, or simply indulging. Choose your favourites, add a personal touch, and let us wrap it up with care.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Start Building</button>
+                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Start Building</button>
                     </div>
                 </div>
             </div>
@@ -218,7 +215,7 @@
                     <p class="lead">Whether you're strolling through Harrogate, exploring Leeds, or visiting the historic Knaresborough Castle, there's a Bean and Brew waiting to greet you. Each venue offers its own cosy charm, delicious menu, and friendly atmosphere. Find your nearest café and drop by for a moment of calm and a cup of joy.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a  href="location.html">
-                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Find a Location</button>
+                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Find a Location</button>
                         </a>
                     </div>
                 </div>
@@ -236,7 +233,7 @@
                     <h1 class="display-5 fw-bold text-body-emphasis pt-2 lh-1 mb-3">Stay Connected</h1>
                     <p class="lead">Follow us on social media for the latest treats, behind-the-scenes moments, and community highlights. Got something to say? We’d love to hear it. Share your thoughts, feedback, or ideas and help shape the Bean & Brew experience.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Check the Socials</button>
+                        <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold">Check the Socials</button>
                     </div>
                 </div>
             </div>
@@ -338,73 +335,63 @@
         </div>
 
 
-        <!-- Register Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Register</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="InputUser" class="form-label">Enter a Username</label>
-                                <input type="text" class="form-control" id="InputUser" aria-describedby="userHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputPassword1" class="form-label">Create a Password</label>
-                                <input type="password" class="form-control" id="InputPassword1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputPassword1" class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="InputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="Check1">
-                                <label class="form-check-label" for="Check1">Show Password</label>
-                            </div>
-                            <button type="submit" class="btn text-white" style="background-color: #987654; border: 1px solid #987654;">Register</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-
-        <!-- Login Modal -->
-        <div class="modal fade" id="staticBackdropLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="InputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="InputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="Check1">
-                                <label class="form-check-label" for="Check1">Show Password</label>
-                            </div>
-                            <button type="submit" class="btn text-white" style="background-color: #987654; border: 1px solid #987654;">Login</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="InputUserRegister" class="form-label">Enter a Username</label>
+              <input type="text" class="form-control" id="InputUserRegister" />
             </div>
+            <div class="mb-3">
+              <label for="InputEmailRegister" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmailRegister" />
+            </div>
+            <div class="mb-3">
+              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
+              <input type="password" class="form-control" id="InputPasswordRegister" />
+            </div>
+            <div class="mb-3">
+              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
+            </div>
+            <button type="submit" class="btn text-white w-100 main-button">Register</button>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="InputEmailLogin" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmailLogin" />
+            </div>
+            <div class="mb-3">
+              <label for="InputPasswordLogin" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPasswordLogin" />
+            </div>
+            <button type="submit" class="btn text-white w-100 main-button">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Scroll Button -->
     <a href="#bottom" class="btn scroll-bottom-btn position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 64px; height: 64px; border-radius: 50%; z-index: 1050;" title="Scroll to bottom">

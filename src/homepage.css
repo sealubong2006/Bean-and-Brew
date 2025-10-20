@@ -11,6 +11,12 @@
   transition: all 0.3s ease;
 }
 
+.main-button {
+  color: #987654 !important;
+  border: 2px solid #987654;
+  background: transparent;
+}
+
 .main-button:hover{
   background-color: #987654;
   color: white !important;
@@ -33,7 +39,7 @@
 
 .nav-link-hover:hover .dropdown-menu {
   display: block;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .nav-link-animate {
@@ -58,9 +64,39 @@
   width: 100%;
 }
 
+.nav-width{
+  width: 85%;
+}
+
+.hero-section {
+  min-height: 87.35vh;
+  padding: 2rem 0;
+}
+
+.hero-text {
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
 @media (max-width: 992px) {
   .logo {
     max-height: 80px;
+  }
+  .hero-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    justify-content: center !important;
+  }
+  .hero-text {
+    font-size: 2.8rem;
+  }
+  .main-button {
+    font-size: 1rem;
   }
 }
 
@@ -77,16 +113,14 @@
   hr {
     margin-top: 1rem;
   }
+  .hero-text {
+    font-size: 2.2rem;
+  }
+  .main-button {
+    width: 100%;
+  }
 }
 
-.btn-outline-light {
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.top-one{
-  width: 85%;
-}
 
 @media screen and (max-width: 400px) and (max-height: 900px) {
   #hero-media {
@@ -100,4 +134,32 @@
 
 .scroll-bottom-btn:hover{
   background-color: #b9a189;
+}
+
+/* Ensure modals appear on small screens */
+.modal-dialog {
+  margin: 1rem auto;
+  max-width: 95%;
+}
+
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-backdrop.show {
+  opacity: 0.8;
+  z-index: 1050;
+}
+
+.modal {
+  z-index: 2000 !important;
+}
+
+@media (max-width: 576px) {
+  .scroll-buttons a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
 }
