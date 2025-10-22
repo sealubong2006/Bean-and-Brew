@@ -1,11 +1,6 @@
-.nav-back{
-    background-color: #5a482d;
-}
-
 .box{
     background-color: #D8C3A5;
 }
-
 
 .logo {
   max-height: 100px;
@@ -57,7 +52,7 @@
   transform: translateX(-50%);
   width: 0%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: black;
   transition: width 0.2s ease;
 }
 

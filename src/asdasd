@@ -1,0 +1,114 @@
+    <div class="container py-5">
+        <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold">Nutrition & Ingredients</h1>
+        <p class="lead">Everything you need to know about what goes into our brews, bakes, and bites.</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Coffee Section -->
+        <div class="col-md-6">
+            <div class="card card-animate h-100 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Drinks</h4>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, sapien nec facilisis tincidunt, justo sapien bibendum lorem, nec tincidunt lorem ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Bakes Section -->
+    <div class="col-md-6">
+        <div class="card card-animate h-100 shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title">Baked Goods</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Biscuits Section -->
+    <div class="col-md-6">
+        <div class="card card-animate h-100 shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title">Biscuits & Cookies</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chocolate Section -->
+    <div class="col-md-6">
+        <div class="card card-animate h-100 shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title">Chocolate and Sweets</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <h1 class="fw-bold">Allergy Information</h1>
+    <p class="lead">We take allergens seriously. Here's what to look out for in our products:</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Gluten -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center card-animate h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-bread fs-1 text-warning"></i>
+          <h5 class="card-title mt-2">Gluten</h5>
+          <p class="card-text small">Found in wheat-based bakes and pastries.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuts -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center card-animate h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-nut fs-1 text-danger"></i>
+          <h5 class="card-title mt-2">Nuts</h5>
+          <p class="card-text small">Present in some cookies, chocolates, and toppings.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dairy -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center card-animate h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-cup-hot fs-1 text-primary"></i>
+          <h5 class="card-title mt-2">Dairy</h5>
+          <p class="card-text small">Used in milk chocolate, cream fillings, and drinks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eggs -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center card-animate h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-egg-fried fs-1 text-success"></i>
+          <h5 class="card-title mt-2">Eggs</h5>
+          <p class="card-text small">Common in pastries, cakes, and some biscuits.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <p class="text-muted small">Please check individual product labels or contact us for detailed allergen info.</p>
+  </div>
+</div>
