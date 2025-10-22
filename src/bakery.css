@@ -164,12 +164,12 @@
   }
 }
 
-.course-card{
+.card-animate{
   box-shadow: 0 2px 5px #b9a189 ;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.course-card:hover {
+.card-animate:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 2px 8px 10px #b9a189;
 }
