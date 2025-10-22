@@ -48,12 +48,12 @@
                             <a class="nav-link text-white nav-link-animate" href="homepage.html">Home</a>
                         </li>
                         <li class="nav-item dropdown nav-link-hover">
-                            <a class="nav-link text-white nav-link-animate" href="#"><strong>Order</strong></a>
+                            <a class="nav-link text-white nav-link-animate" href="menu.html"><strong>Order</strong></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav-button" href="#">Menu</a></li>
+                                <li><a class="dropdown-item nav-button" href="menu.html">Menu</a></li>
                                 <li><a class="dropdown-item nav-button" href="booktable.html">Bookings</a></li>
                                 <li><a class="dropdown-item nav-button" href="bakery.html">Bakery</a></li>
-                                <li><a class="dropdown-item nav-button" href="#">Hampers</a></li>
+                                <li><a class="dropdown-item nav-button" href="hampers.html">Hampers</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown nav-link-hover">
@@ -65,7 +65,7 @@
                             </ul>
                         </li>
                         <li class="nav-item nav-link-hover">
-                            <a class="nav-link text-white nav-link-animate" href="#">Contact Us</a>
+                            <a class="nav-link text-white nav-link-animate" href="contactus.html">Contact Us</a>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -113,7 +113,9 @@
                     <h1 class="display-5 fw-bold text-white hero-text">TASTE WHAT<br/>WE ARE MADE OF</h1>
                     <p class="fs-5 mb-4 text-light">Every bite tells our story—fresh, local, and baked to perfection!</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
-                        <button type="button" class="btn btn-lg main-button fw-bold">Seasonal Menu</button>
+                    <a href="#pre-order">
+                        <button type="button" class="btn btn-lg main-button fw-bold">Pre-Order</button>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -126,7 +128,7 @@
                 <h1><strong>Menu</strong></h1>
             </div>
 
-            <div class="row">
+            <div class="row" id="seasonal-menu">
                 <!-- Product Grid (3/4 width) -->
                 <h2 class="py-4">Festive Seasonal Menu</h2>
                 <div class="col-md-9">
@@ -612,6 +614,63 @@
         </div>
     </div>
 
+    
+    <div class="container-fluid">
+        <div class="container py-5" id="pre-order">
+            <div class="d-flex justify-content-center py-5">
+                <h1><strong>Pre-Order</strong></h1>
+            </div>
+            <div class="row">
+        
+            <div class="col-md-9">
+                <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Order Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" maxlength="11">
+                    <div class="form-text">Enter a valid number begining with 07.</div>
+                </div>
+                    <div class="col-md-6">
+                        <label for="location" class="form-label">Pick-Up Location</label>
+                        <select class="form-select" id="location">
+                        <option selected disabled>Choose a location.</option>
+                        <option>Leeds</option>
+                        <option>Harrogate</option>
+                        <option>Knaresborough Castle</option>
+                    </select>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow-sm p-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="fw-bold mb-3">Your Order</h5>
+                        <p><i>Lorem Ipsum </i><strong> x4</strong></p>   
+                        <p><i>Lorem Ipsum </i><strong> x1</strong></p>    
+                        <hr>
+                        <p class="fw-bold">Total: £x</p>
+                        <p><strong>Pick-Up Location:</strong><i>site location</i> </p>
+                    </div>
+                <div>
+                    <button class="btn btn-lg btn-primary w-100">Go to Checkout</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
 
     <div class="container-fluid" style="background-color:#5a482d;" id="bottom">
         <div class="container" id="footer">
@@ -621,16 +680,16 @@
                         <h5>Quick Links</h5> 
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Home</a>
+                                <a href="homepage.html" class="nav-link p-0" style="color: bisque;">Home</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a href="#" class="nav-link p-0" style="color: bisque;">Menu</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Bakery</a>
+                                <a href="bakery.html" class="nav-link p-0" style="color: bisque;">Bakery</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Hampers</a>
+                                <a href="hampers.html" class="nav-link p-0" style="color: bisque;">Hampers</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
@@ -642,7 +701,7 @@
                                 <a href="location.html#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Contact Us</a>
+                                <a href="contactus.html" class="nav-link p-0" style="color: bisque;">Contact Us</a>
                             </li>
                         </ul>
                     </div>
