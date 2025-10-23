@@ -8,7 +8,30 @@
 
 .logo {
   max-height: 100px;
-  transition: all 0.3s ease;
+  animation: spin-y 2.5s linear;
+  transform-style: preserve-3d;
+  perspective: 1000px
+}
+
+.logo:hover {
+  animation: spin-y 2s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px
+}
+
+@keyframes spin-y {
+
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .main-button {
@@ -76,6 +99,11 @@
 .hero-text {
   font-size: 6rem;
   line-height: 1.1;
+}
+
+.btn-signup-offcanvas {
+  border: 1px solid #987654 ;
+  color: #987654;
 }
 
 @media (max-width: 992px) {

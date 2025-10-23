@@ -22,7 +22,7 @@
 
                 <!-- Account dropdown + Hamburger (visible only on small screens) -->
                 <div class="d-md-none d-flex align-items-center">
-                <!-- Account dropdown -->
+                    <!-- Account dropdown -->
                     <div class="dropdown me-3">
                         <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
@@ -66,6 +66,11 @@
                         </li>
                         <li class="nav-item nav-link-hover">
                             <a class="nav-link text-dark nav-link-animate" href="contactus.html"><strong>Contact Us</strong></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-button" href="contactus.html#FAQs">FAQs</a></li>
+                                <li><a class="dropdown-item nav-button" href="contactus.html#ReachOut">Reach Out</a></li>
+                                <li><a class="dropdown-item nav-button" href="socials.html">Our Socials</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -74,9 +79,9 @@
                             <span class="p-1" style="font-size: 1.3rem;">Account</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin" href="#">Login</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropRegister" href="#">Register</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -100,13 +105,13 @@
                     <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                     <li class="nav-item mt-3">
-                        <button type="button main-button" class="btn w-100">Sign-up</button>
+                        <button type="button main-button" class="btn btn-signup-offcanvas w-100">Sign-up</button>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <!-- Hero Section -->
+        <!-- Socials Section -->
         <div class="container-fluid d-flex justify-content-start align-items-center hero-section">
             <div class="container text-start ps-md-5" id="hero-media" style="max-width: 87%;">
                 <div class="py-3">
@@ -124,14 +129,10 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="50">
                         </a>
                     </div>
-
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <div class="container-fluid" style="background-color:#5a482d;" id="bottom">
         <div class="container" id="footer">
@@ -141,7 +142,7 @@
                         <h5>Quick Links</h5> 
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Home</a>
+                                <a href="homepage.html" class="nav-link p-0" style="color: bisque;">Home</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a href="menu.html" class="nav-link p-0" style="color: bisque;">Menu</a>
@@ -153,10 +154,10 @@
                                 <a href="hampers.html" class="nav-link p-0" style="color: bisque;">Hampers</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
+                                <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
+                                <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a href="location.html#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
@@ -168,19 +169,23 @@
                     </div>
 
                     <div class="col-6 col-md-3 mb-3" style="color: bisque;">
-                        <h5>Dietary Information</h5>
+                        <a href="dietary.html" style="color: bisque; text-decoration: none;">
+                            <h5>Dietary Information</h5>
+                        </a>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Nutrition & allergens</a>
+                                <a href="dietary.html#Nutrition-&-Ingredients" class="nav-link p-0" style="color: bisque;">Nutrition & Ingredients</a>
                             </li>
                             <li class="nav-item mb-2">
-                               <a href="#" class="nav-link p-0" style="color: bisque;">Shop dietary information</a>
+                               <a href="dietary.html#Allergy-Information" class="nav-link p-0" style="color: bisque;">Allergy Information</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2 mb-3" style="color: bisque;">
-                        <h5>Legal</h5>
+                        <a href="legalpage.html" style="color: bisque; text-decoration: none;">
+                            <h5>Legal</h5>
+                        </a>
                         <ul class="nav flex-column"> 
                             <li class="nav-item mb-2">
                                 <a href="legalpage.html#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
@@ -212,79 +217,80 @@
                 </footer>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
-            <div class="container">
-                <footer class="p-1">
-                    <div class="row">
-                        <div class="col-6 col-md-4">
-                            <div class="my-2">
-                                <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
-                            </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
+        <div class="container">
+            <footer class="p-1">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="my-2">
+                            <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-
-
-  <!-- Register Modal -->
-  <div class="modal fade" id="#staticBackdropRegister" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputUserRegister" class="form-label">Enter a Username</label>
-              <input type="text" class="form-control" id="InputUserRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputEmailRegister" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
-              <input type="password" class="form-control" id="InputPasswordRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Register</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Login Modal -->
-  <div class="modal fade" id="staticBackdropLogin" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputEmailLogin" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailLogin" />
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputUserRegister" class="form-label">Enter a Username</label>
+                            <input type="text" class="form-control" id="InputUserRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmailRegister" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordRegister" class="form-label">Create a Password</label>
+                            <input type="password" class="form-control" id="InputPasswordRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Register</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="InputPasswordLogin" class="form-label">Password</label>
-              <input type="password" class="form-control" id="InputPasswordLogin" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Login</button>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputEmailLogin" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailLogin" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordLogin" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPasswordLogin" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll Button -->
     <a href="#bottom" class="btn scroll-bottom-btn position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 64px; height: 64px; border-radius: 50%; z-index: 1050;" title="Scroll to bottom">

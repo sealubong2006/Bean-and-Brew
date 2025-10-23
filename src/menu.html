@@ -10,7 +10,7 @@
 <body>
 
     <div class="container-fluid bg-image text-white" id="top">
-    <!-- Navbar Section -->
+        <!-- Navbar Section -->
         <div class="container-fluid nav-width py-3">
             <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <!-- Logo -->
@@ -22,7 +22,7 @@
 
                 <!-- Account dropdown + Hamburger (visible only on small screens) -->
                 <div class="d-md-none d-flex align-items-center">
-                <!-- Account dropdown -->
+                    <!-- Account dropdown -->
                     <div class="dropdown me-3">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
@@ -66,6 +66,11 @@
                         </li>
                         <li class="nav-item nav-link-hover">
                             <a class="nav-link text-white nav-link-animate" href="contactus.html">Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-button" href="contactus.html#FAQs">FAQs</a></li>
+                                <li><a class="dropdown-item nav-button" href="contactus.html#ReachOut">Reach Out</a></li>
+                                <li><a class="dropdown-item nav-button" href="socials.html">Our Socials</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -74,9 +79,9 @@
                             <span class="p-1" style="font-size: 1.3rem;">Account</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin" href="#">Login</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Register</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -95,12 +100,12 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
                     <li class="nav-item mt-3">
-                        <button type="button main-button" class="btn w-100">Sign-up</button>
+                        <button type="button main-button" class="btn btn-signup-offcanvas w-100">Sign-up</button>
                     </li>
                 </ul>
             </div>
@@ -113,15 +118,16 @@
                     <h1 class="display-5 fw-bold text-white hero-text">TASTE WHAT<br/>WE ARE MADE OF</h1>
                     <p class="fs-5 mb-4 text-light">Every bite tells our story—fresh, local, and baked to perfection!</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
-                    <a href="#pre-order">
-                        <button type="button" class="btn btn-lg main-button fw-bold">Pre-Order</button>
-                    </a>
+                        <a href="#pre-order">
+                            <button type="button" class="btn btn-lg main-button fw-bold">Pre-Order</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Title Section -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="d-flex justify-content-center py-5">
@@ -135,541 +141,534 @@
                     <div class="row g-4">
 
                         <!-- Row 1 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
                                 </div>
                             </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <!-- Row 1 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <h2 class="pt-5">Drinks</h2>
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h2 class="pt-5">Breakfast</h2>
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <h2 class="pt-5">Lunch</h2>
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h2 class="pt-5">Dinner</h2>
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h2 class="pt-5">Dessert</h2>
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Row 2 -->
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card h-100 shadow-sm">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem Ipsum</h5>
-                                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                        <p class="fw-bold">£1.00</p>
-                                        <button class="btn main-button w-100">Add</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
-                    </div>                            
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="pt-5">Drinks</h2>
+                        <!-- Row 3 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 5 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="pt-5">Breakfast</h2>
+                        <!-- Row 6 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 7 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="pt-5">Lunch</h2>
+                        <!-- Row 8 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 9 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="pt-5">Dinner</h2>
+                        <!-- Row 10 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 11 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="pt-5">Dessert</h2>
+                        <!-- Row 12 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 13 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem Ipsum</h5>
+                                    <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <p class="fw-bold">£1.00</p>
+                                    <button class="btn main-button w-100">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                            
                     
 
-                    <!-- Checkout Sidebar (1/4 width) -->
-                    <div class="col-md-3">
-                        <div class="card shadow-sm p-3 d-flex flex-column justify-content-between">
-                            <div>
-                                <h5 class="fw-bold mb-3">Your Order</h5>
-                                <p><i>Lorem Ipsum </i><strong> x4</strong></p>   
-                                <p><i>Lorem Ipsum </i><strong> x1</strong></p>   
-                                <p><i>Lorem Ipsum </i><strong> x3</strong></p>   
-                                <p><i>Lorem Ipsum </i><strong> x2</strong></p>   
-                                <p><i>Lorem Ipsum </i><strong> x1</strong></p>   
-                                <p><i>Lorem Ipsum </i><strong> x3</strong></p>   
-                                <hr>
-                                <p class="fw-bold">Total: £x</p>
-                            </div>
+                <!-- Checkout Sidebar (1/4 width) -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm p-3 d-flex flex-column justify-content-between">
                         <div>
-                            <button class="btn btn-lg btn-primary w-100 mt-4">Go to Checkout</button>
+                            <h5 class="fw-bold mb-3">Your Order</h5>
+                            <p><i>Lorem Ipsum </i><strong> x4</strong></p>   
+                            <p><i>Lorem Ipsum </i><strong> x1</strong></p>   
+                            <p><i>Lorem Ipsum </i><strong> x3</strong></p>   
+                            <p><i>Lorem Ipsum </i><strong> x2</strong></p>   
+                            <p><i>Lorem Ipsum </i><strong> x1</strong></p>   
+                            <p><i>Lorem Ipsum </i><strong> x3</strong></p>   
+                            <hr>
+                            <p class="fw-bold">Total: £x</p>
                         </div>
+                    <div>
+                        <button class="btn btn-lg btn-primary w-100 mt-4">Go to Checkout</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    </div>
     
+    <!-- Pre-Order Section -->
     <div class="container-fluid">
         <div class="container py-5" id="pre-order">
             <div class="d-flex justify-content-center py-5">
                 <h1><strong>Pre-Order</strong></h1>
             </div>
             <div class="row">
-        
-            <div class="col-md-9">
-                <form>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="name" class="form-label">Order Name</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="text" class="form-control" id="email">
-                    </div>
-                <div class="col-md-6">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" maxlength="11">
-                    <div class="form-text">Enter a valid number begining with 07.</div>
+                <div class="col-md-9">
+                    <!-- Form Section -->
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Order Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" maxlength="11">
+                                <div class="form-text">Enter a valid number begining with 07.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="location" class="form-label">Pick-Up Location</label>
+                                <select class="form-select" id="location">
+                                    <option selected disabled>Choose a location.</option>
+                                    <option>Leeds</option>
+                                    <option>Harrogate</option>
+                                    <option>Knaresborough Castle</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                    <div class="col-md-6">
-                        <label for="location" class="form-label">Pick-Up Location</label>
-                        <select class="form-select" id="location">
-                        <option selected disabled>Choose a location.</option>
-                        <option>Leeds</option>
-                        <option>Harrogate</option>
-                        <option>Knaresborough Castle</option>
-                    </select>
-                    </div>
-                </div>
-                </form>
-            </div>
 
-            <div class="col-md-3">
-                <div class="card shadow-sm p-3 d-flex flex-column justify-content-between">
-                    <div>
-                        <h5 class="fw-bold mb-3">Your Order</h5>
-                        <p><i>Lorem Ipsum </i><strong> x4</strong></p>   
-                        <p><i>Lorem Ipsum </i><strong> x1</strong></p>    
-                        <hr>
-                        <p class="fw-bold">Total: £x</p>
-                        <p><strong>Pick-Up Location:</strong><i>site location</i> </p>
+                <!-- Checkout Section -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm p-3 d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold mb-3">Your Order</h5>
+                            <p><i>Lorem Ipsum </i><strong> x4</strong></p>   
+                            <p><i>Lorem Ipsum </i><strong> x1</strong></p>    
+                            <hr>
+                            <p class="fw-bold">Total: £x</p>
+                            <p><strong>Pick-Up Location:</strong><i>site location</i> </p>
+                        </div>
+                        <div>
+                            <button class="btn btn-lg btn-primary w-100">Go to Checkout</button>
+                        </div>
                     </div>
-                <div>
-                    <button class="btn btn-lg btn-primary w-100">Go to Checkout</button>
                 </div>
             </div>
-        </div>
         </div>
     </div>
-</div>
-
 
 
     <div class="container-fluid" style="background-color:#5a482d;" id="bottom">
@@ -692,10 +691,10 @@
                                 <a href="hampers.html" class="nav-link p-0" style="color: bisque;">Hampers</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
+                                <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
+                                <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a href="location.html#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
@@ -707,19 +706,23 @@
                     </div>
 
                     <div class="col-6 col-md-3 mb-3" style="color: bisque;">
-                        <h5>Dietary Information</h5>
+                        <a href="dietary.html" style="color: bisque; text-decoration: none;">
+                            <h5>Dietary Information</h5>
+                        </a>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Nutrition & allergens</a>
+                                <a href="dietary.html#Nutrition-&-Ingredients" class="nav-link p-0" style="color: bisque;">Nutrition & Ingredients</a>
                             </li>
                             <li class="nav-item mb-2">
-                               <a href="#" class="nav-link p-0" style="color: bisque;">Shop dietary information</a>
+                               <a href="dietary.html#Allergy-Information" class="nav-link p-0" style="color: bisque;">Allergy Information</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2 mb-3" style="color: bisque;">
-                        <h5>Legal</h5>
+                        <a href="legalpage.html" style="color: bisque; text-decoration: none;">
+                            <h5>Legal</h5>
+                        </a>
                         <ul class="nav flex-column"> 
                             <li class="nav-item mb-2">
                                 <a href="legalpage.html#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
@@ -751,79 +754,80 @@
                 </footer>
             </div>
         </div>
+    <div>
 
-        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
-            <div class="container">
-                <footer class="p-1">
-                    <div class="row">
-                        <div class="col-6 col-md-4">
-                            <div class="my-2">
-                                <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
-                            </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
+        <div class="container">
+            <footer class="p-1">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="my-2">
+                            <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-
-
-  <!-- Register Modal -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputUserRegister" class="form-label">Enter a Username</label>
-              <input type="text" class="form-control" id="InputUserRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputEmailRegister" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
-              <input type="password" class="form-control" id="InputPasswordRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Register</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputEmailLogin" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailLogin" />
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputUserRegister" class="form-label">Enter a Username</label>
+                            <input type="text" class="form-control" id="InputUserRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmailRegister" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordRegister" class="form-label">Create a Password</label>
+                            <input type="password" class="form-control" id="InputPasswordRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Register</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="InputPasswordLogin" class="form-label">Password</label>
-              <input type="password" class="form-control" id="InputPasswordLogin" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Login</button>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputEmailLogin" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailLogin" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordLogin" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPasswordLogin" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll Button -->
     <a href="#bottom" class="btn scroll-bottom-btn position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 64px; height: 64px; border-radius: 50%; z-index: 1050;" title="Scroll to bottom">

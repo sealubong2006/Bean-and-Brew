@@ -22,7 +22,7 @@
 
                 <!-- Account dropdown + Hamburger (visible only on small screens) -->
                 <div class="d-md-none d-flex align-items-center">
-                <!-- Account dropdown -->
+                    <!-- Account dropdown -->
                     <div class="dropdown me-3">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
@@ -66,6 +66,11 @@
                         </li>
                         <li class="nav-item nav-link-hover">
                             <a class="nav-link text-white nav-link-animate" href="contactus.html">Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-button" href="contactus.html#FAQs">FAQs</a></li>
+                                <li><a class="dropdown-item nav-button" href="contactus.html#ReachOut">Reach Out</a></li>
+                                <li><a class="dropdown-item nav-button" href="socials.html">Our Socials</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -74,9 +79,9 @@
                             <span class="p-1" style="font-size: 1.3rem;">Account</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin" href="#">Login</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Register</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -95,12 +100,12 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
                     <li class="nav-item mt-3">
-                        <button type="button main-button" class="btn w-100">Sign-up</button>
+                        <button type="button main-button" class="btn btn-signup-offcanvas w-100">Sign-up</button>
                     </li>
                 </ul>
             </div>
@@ -113,37 +118,38 @@
                     <h1 class="display-5 fw-bold text-white hero-text">YOUR <br />TABLE AWAITS</h1>
                     <p class="fs-5 mb-4 text-light">Book now and make time for what matters most.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
-                    <a href="#booking-form">
-                        <button type="button" class="btn btn-lg main-button fw-bold">Book Now</button>
-                    </a>
+                        <a href="#booking-form">
+                            <button type="button" class="btn btn-lg main-button fw-bold">Book Now</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Introduction -->
     <div class="container-fluid">
         <div class="container py-5">
             <div class="row align-items-center">
-            <!-- Text Section -->
-            <div class="col-lg-7 mb-4 mb-lg-0 text-start">
-                <h2 class="display-5 fw-bold">Reserve A Table at Bean & Brew</h2>
-                <p class="lead mt-3">
-                    At Bean & Brew, we believe every great moment starts with a seat at the table, reserving your table ensures your experience is smooth, relaxed, and exactly how you imagined. <br>
-                    <strong> Why Book Ahead? </strong><br>
-                    - Guaranteed seating during busy hours <br> 
-                    - Priority service for pre-booked guests <br> 
-                    - Custom requests like dietary needs or celebration setups <br> 
-                    <strong> Special Occasions? </strong> <br> 
-                    Let us know in the notes if you're celebrating something special—we love adding a little extra magic to your moments.<br>
-                </p>
-                <p>Select your details and we will try to get the best seats for you.</p>
-            </div>
-            <div class="col-lg-5 text-center">
-                <img src="../public/images/Booking-Table-Restaurant.png" class="img-fluid rounded shadow" alt="Table setting at Bean & Brew">
+                <!-- Text Section -->
+                <div class="col-lg-7 mb-4 mb-lg-0 text-start">
+                    <h2 class="display-5 fw-bold">Reserve A Table at Bean & Brew</h2>
+                    <p class="lead mt-3">
+                        At Bean & Brew, we believe every great moment starts with a seat at the table, reserving your table ensures your experience is smooth, relaxed, and exactly how you imagined. <br>
+                        <strong> Why Book Ahead? </strong><br>
+                        - Guaranteed seating during busy hours <br> 
+                        - Priority service for pre-booked guests <br> 
+                        - Custom requests like dietary needs or celebration setups <br> 
+                        <strong> Special Occasions? </strong> <br> 
+                        Let us know in the notes if you're celebrating something special—we love adding a little extra magic to your moments.<br>
+                    </p>
+                    <p>Select your details and we will try to get the best seats for you.</p>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="../public/images/Booking-Table-Restaurant.png" class="img-fluid rounded shadow" alt="Table setting at Bean & Brew">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Booking Form -->
@@ -182,7 +188,7 @@
                     <input type="number" class="form-control" id="guests" min="1" max="20">
                 </div>
             </div>
-            <button type="submit" class="btn btn-lg main-button mt-4">Confirm Booking</button>
+            <button type="submit" class="btn btn-lg main-button fw-bold mt-4">Check Availability</button>
         </form>
     </div>
 
@@ -207,10 +213,10 @@
                                 <a href="hampers.html" class="nav-link p-0" style="color: bisque;">Hampers</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
+                                <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="location.html#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
+                                <a href="location.html#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a href="location.html#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
@@ -222,19 +228,23 @@
                     </div>
 
                     <div class="col-6 col-md-3 mb-3" style="color: bisque;">
-                        <h5>Dietary Information</h5>
+                        <a href="dietary.html" style="color: bisque; text-decoration: none;">
+                            <h5>Dietary Information</h5>
+                        </a>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0" style="color: bisque;">Nutrition & allergens</a>
+                                <a href="dietary.html#Nutrition-&-Ingredients" class="nav-link p-0" style="color: bisque;">Nutrition & Ingredients</a>
                             </li>
                             <li class="nav-item mb-2">
-                               <a href="#" class="nav-link p-0" style="color: bisque;">Shop dietary information</a>
+                               <a href="dietary.html#Allergy-Information" class="nav-link p-0" style="color: bisque;">Allergy Information</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2 mb-3" style="color: bisque;">
-                        <h5>Legal</h5>
+                        <a href="legalpage.html" style="color: bisque; text-decoration: none;">
+                            <h5>Legal</h5>
+                        </a>
                         <ul class="nav flex-column"> 
                             <li class="nav-item mb-2">
                                 <a href="legalpage.html#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
@@ -255,90 +265,90 @@
                         <form>
                             <h5>Subscribe for the latest updates.</h5>
                             <p>Monthly digest of what's new and exciting from us.</p>
-                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                                    <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
-                                    <button class="btn footer-button" type="button" style="color: #b9a189; border: 2px solid #b9a189;"><strong>Subscribe</strong></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-
-        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
-            <div class="container">
-                <footer class="p-1">
-                    <div class="row">
-                        <div class="col-6 col-md-4">
-                            <div class="my-2">
-                                <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                                <button class="btn footer-button" type="button" style="color: #b9a189; border: 2px solid #b9a189;"><strong>Subscribe</strong></button>
                             </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
+        <div class="container">
+            <footer class="p-1">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="my-2">
+                            <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-
-
-  <!-- Register Modal -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputUserRegister" class="form-label">Enter a Username</label>
-              <input type="text" class="form-control" id="InputUserRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputEmailRegister" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
-              <input type="password" class="form-control" id="InputPasswordRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Register</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputEmailLogin" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailLogin" />
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputUserRegister" class="form-label">Enter a Username</label>
+                            <input type="text" class="form-control" id="InputUserRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmailRegister" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordRegister" class="form-label">Create a Password</label>
+                            <input type="password" class="form-control" id="InputPasswordRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Register</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="InputPasswordLogin" class="form-label">Password</label>
-              <input type="password" class="form-control" id="InputPasswordLogin" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Login</button>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputEmailLogin" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailLogin" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordLogin" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPasswordLogin" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- Scroll Button -->
     <a href="#bottom" class="btn scroll-bottom-btn position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 64px; height: 64px; border-radius: 50%; z-index: 1050;" title="Scroll to bottom">

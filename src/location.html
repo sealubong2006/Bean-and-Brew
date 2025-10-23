@@ -10,7 +10,7 @@
 <body>
 
     <div class="container-fluid bg-image text-white" id="top">
-    <!-- Navbar Section -->
+        <!-- Navbar Section -->
         <div class="container-fluid nav-width py-3">
             <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <!-- Logo -->
@@ -22,7 +22,7 @@
 
                 <!-- Account dropdown + Hamburger (visible only on small screens) -->
                 <div class="d-md-none d-flex align-items-center">
-                <!-- Account dropdown -->
+                    <!-- Account dropdown -->
                     <div class="dropdown me-3">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../public/images/User.jpg" alt="Account" width="32" height="32" class="rounded-circle me-2">
@@ -65,7 +65,12 @@
                             </ul>
                         </li>
                         <li class="nav-item nav-link-hover">
-                            <a class="nav-link text-white nav-link-animate" href="#">Contact Us</a>
+                            <a class="nav-link text-white nav-link-animate" href="contactus.html">Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-button" href="contactus.html#FAQs">FAQs</a></li>
+                                <li><a class="dropdown-item nav-button" href="contactus.html#ReachOut">Reach Out</a></li>
+                                <li><a class="dropdown-item nav-button" href="socials.html">Our Socials</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -74,9 +79,9 @@
                             <span class="p-1" style="font-size: 1.3rem;">Account</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdropLogin" href="#">Login</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Register</a></li>
+                            <li><a class="dropdown-item nav-button" data-bs-toggle="modal" data-bs-target="#registerModal" href="#">Register</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -95,12 +100,12 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
                     <li class="nav-item mt-3">
-                        <button type="button main-button" class="btn w-100">Sign-up</button>
+                        <button type="button main-button" class="btn btn-signup-offcanvas w-100">Sign-up</button>
                     </li>
                 </ul>
             </div>
@@ -117,239 +122,248 @@
         </div>
     </div>
 
-        <div class="container-fluid" id="Leeds">
-            <div class="container">
-                <div class="row align-items-center px-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-5">
-                        <img src="../public/images/Leeds-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Leeds, England</h1>
-                            <hr class="opacity-75" style="border: 1px dotted #987654;">
-                        <p class="lead">Calverley Street, <br> Leeds, West Yorkshire, <br> LS1 3BR</p>
-                            <hr class="opacity-75" style="border: 1px dotted #987654;">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                            <a href="https://www.google.com/maps/place/Leeds,+UK" target="_blank">
-                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
-                            </a>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=Leeds,+UK" target="_blank">
-                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <!-- Leeds Section -->
+    <div class="container-fluid" id="Leeds">
         <div class="container">
-            <hr class="mt-3 opacity-50" style="border: 2px solid #5a482d;">
-            <hr class="mb-3 opacity-50" style="border: 2px solid #5a482d;">
-        </div>
-
-        <div class="container-fluid" id="Harrogate">
-            <div class="container">
-                <div class="row align-items-center px-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-5">
-                        <img src="../public/images/Harrogate-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Harrogate, England</h1>
-                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
-                        <p class="lead">Parliament Street, <br> Harrogate, <br> HG1 2RE</p>
-                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                            <a href="https://www.google.com/maps/place/Harrogate,+UK" target="_blank">
-                                <button type="button" class="btn btn-lg main-button px-2 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
-                            </a>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=Harrogate,+UK" target="_blank">
-                                <button type="button" class="btn btn-lg main-button px-4 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
-                            </a>
-                        </div>
+            <div class="row align-items-center px-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-5">
+                    <img src="../public/images/Leeds-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Leeds, England</h1>
+                    <hr class="opacity-75" style="border: 1px dotted #987654;">
+                    <p class="lead">Calverley Street, <br> Leeds, West Yorkshire, <br> LS1 3BR</p>
+                    <hr class="opacity-75" style="border: 1px dotted #987654;">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                        <a href="https://www.google.com/maps/place/Leeds,+UK" target="_blank">
+                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Leeds,+UK" target="_blank">
+                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- Divider -->
+    <div class="container">
+        <hr class="mt-3 opacity-50" style="border: 2px solid #5a482d;">
+        <hr class="mb-3 opacity-50" style="border: 2px solid #5a482d;">
+    </div>
+
+    <!-- Harrogate Section -->
+    <div class="container-fluid" id="Harrogate">
         <div class="container">
-            <hr class="mt-3 opacity-50" style="border: 2px solid #5a482d;">
-            <hr class="mb-3 opacity-50" style="border: 2px solid #5a482d;">
-        </div>
-
-        <div class="container-fluid" id="Knaresborough">
-            <div class="container">
-                <div class="row align-items-center px-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-5">
-                        <img src="../public/images/Castle-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Knaresborough Castle, England</h1>
-                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
-                        <p class="lead">Castle Yard, <br> Knaresborough, <br> HG5 8AS</p>
-                        <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                            <a href="https://www.google.com/maps/place/Knaresborough,+UK" target="_blank">
-                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
-                            </a>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=Knaresborough+Castle,+HG5+8AS" target="_blank">
-                                <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
-                            </a>
-                        </div>
+            <div class="row align-items-center px-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-5">
+                    <img src="../public/images/Harrogate-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Harrogate, England</h1>
+                    <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                    <p class="lead">Parliament Street, <br> Harrogate, <br> HG1 2RE</p>
+                    <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                        <a href="https://www.google.com/maps/place/Harrogate,+UK" target="_blank">
+                            <button type="button" class="btn btn-lg main-button px-2 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Harrogate,+UK" target="_blank">
+                            <button type="button" class="btn btn-lg main-button px-4 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid" style="background-color:#5a482d;" id="bottom">
-            <div class="container">
-                <footer class="py-5">
-                    <div class="row">
-                        <div class="col-6 col-md-2 mb-3" style="color: bisque;">
-                            <h5>Quick Links</h5> 
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2">
-                                    <a href="homepage.html" class="nav-link p-0" style="color: bisque;">Home</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="menu.html" class="nav-link p-0" style="color: bisque;">Menu</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="bakery.html" class="nav-link p-0" style="color: bisque;">Bakery</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="hampers.html" class="nav-link p-0" style="color: bisque;">Hampers</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="contactus.html" class="nav-link p-0" style="color: bisque;">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
+    <!-- Divider -->
+    <div class="container">
+        <hr class="mt-3 opacity-50" style="border: 2px solid #5a482d;">
+        <hr class="mb-3 opacity-50" style="border: 2px solid #5a482d;">
+    </div>
 
-                        <div class="col-6 col-md-3 mb-3" style="color: bisque;">
+    <!-- Knaresborough Section -->
+    <div class="container-fluid" id="Knaresborough">
+        <div class="container">
+            <div class="row align-items-center px-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-5">
+                    <img src="../public/images/Castle-Cafe.png" class="d-block mx-lg-auto img-fluid" alt="Skip the Queue" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold pt-2 lh-1 mb-3">Knaresborough Castle, England</h1>
+                    <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                    <p class="lead">Castle Yard, <br> Knaresborough, <br> HG5 8AS</p>
+                    <hr class="mt-3 mb-2 opacity-75" style="border: 1px dotted #987654;">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                        <a href="https://www.google.com/maps/place/Knaresborough,+UK" target="_blank">
+                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">See Location</button>
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Knaresborough+Castle,+HG5+8AS" target="_blank">
+                            <button type="button" class="btn btn-lg main-button px-3 me-sm-3 fw-bold" style="color: #987654; border: 2px solid #987654;">Get Directions</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#5a482d;" id="bottom">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3" style="color: bisque;">
+                        <h5>Quick Links</h5> 
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="homepage.html" class="nav-link p-0" style="color: bisque;">Home</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="menu.html" class="nav-link p-0" style="color: bisque;">Menu</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="bakery.html" class="nav-link p-0" style="color: bisque;">Bakery</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="hampers.html" class="nav-link p-0" style="color: bisque;">Hampers</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#Leeds" class="nav-link p-0" style="color: bisque;">Leeds</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#Harrogate" class="nav-link p-0" style="color: bisque;">Harrogate</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#Knaresborough" class="nav-link p-0" style="color: bisque;">Knaresborough Castle</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="contactus.html" class="nav-link p-0" style="color: bisque;">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-3" style="color: bisque;">
+                        <a href="dietary.html" style="color: bisque; text-decoration: none;">
                             <h5>Dietary Information</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0" style="color: bisque;">Nutrition & allergens</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                   <a href="#" class="nav-link p-0" style="color: bisque;">Shop dietary information</a>
-                                </li>
-                            </ul>
-                        </div>
+                        </a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="dietary.html#Nutrition-&-Ingredients" class="nav-link p-0" style="color: bisque;">Nutrition & Ingredients</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                               <a href="dietary.html#Allergy-Information" class="nav-link p-0" style="color: bisque;">Allergy Information</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="col-6 col-md-2 mb-3" style="color: bisque;">
+                    <div class="col-6 col-md-2 mb-3" style="color: bisque;">
+                        <a href="legalpage.html" style="color: bisque; text-decoration: none;">
                             <h5>Legal</h5>
-                            <ul class="nav flex-column"> 
-                                <li class="nav-item mb-2">
-                                    <a href="legalpage.html#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="legalpage.html#CookiesPolicy" class="nav-link p-0" style="color: bisque;">Cookie Policy</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="legalpage.html#PrivacyPolicy" class="nav-link p-0" style="color: bisque;">Privacy Policy </a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="legalpage.html#AUP" class="nav-link p-0" style="color: bisque;">Acceptable Use Policy</a>
-                                </li>
-                            </ul>
-                        </div>
+                        </a>
+                        <ul class="nav flex-column"> 
+                            <li class="nav-item mb-2">
+                                <a href="legalpage.html#Terms&Conditions" class="nav-link p-0" style="color: bisque;">Terms & Conditions</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="legalpage.html#CookiesPolicy" class="nav-link p-0" style="color: bisque;">Cookie Policy</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="legalpage.html#PrivacyPolicy" class="nav-link p-0" style="color: bisque;">Privacy Policy </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="legalpage.html#AUP" class="nav-link p-0" style="color: bisque;">Acceptable Use Policy</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="col-md-4 offset-md-1 mb-3" style="color: beige;">
-                            <form>
-                                <h5>Subscribe for the latest updates.</h5>
-                                <p>Monthly digest of what's new and exciting from us.</p>
-                                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
-                                        <button class="btn footer-button" type="button" style="color: #b9a189; border: 2px solid #b9a189;"><strong>Subscribe</strong></button>
-                                    </div>
-                                </form>
+                    <div class="col-md-4 offset-md-1 mb-3" style="color: beige;">
+                        <form>
+                            <h5>Subscribe for the latest updates.</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                                <button class="btn footer-button" type="button" style="color: #b9a189; border: 2px solid #b9a189;"><strong>Subscribe</strong></button>
                             </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
+        <div class="container">
+            <footer class="p-1">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="my-2">
+                            <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
                         </div>
-                    </footer>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputUserRegister" class="form-label">Enter a Username</label>
+                            <input type="text" class="form-control" id="InputUserRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmailRegister" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPasswordRegister" class="form-label">Create a Password</label>
+                            <input type="password" class="form-control" id="InputPasswordRegister" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Register</button>
+                    </form>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #503f23;">
-                <div class="container">
-                    <footer class="p-1">
-                        <div class="row">
-                            <div class="col-6 col-md-4">
-                                <div class="my-2">
-                                    <p class="m-0" style="color: beige;">© 2025 Bean and Brew, LTD. All rights reserved.</p>
-                                </div>
-                            </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputEmailLogin" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmailLogin" />
                         </div>
-                    </footer>
+                        <div class="mb-3">
+                            <label for="InputPasswordLogin" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPasswordLogin" />
+                        </div>
+                        <button type="submit" class="btn text-white w-100 main-button">Login</button>
+                    </form>
                 </div>
             </div>
-
-  <!-- Register Modal -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputUserRegister" class="form-label">Enter a Username</label>
-              <input type="text" class="form-control" id="InputUserRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputEmailRegister" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputPasswordRegister" class="form-label">Create a Password</label>
-              <input type="password" class="form-control" id="InputPasswordRegister" />
-            </div>
-            <div class="mb-3">
-              <label for="InputConfirmPasswordRegister" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="InputConfirmPasswordRegister" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Register</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
-
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="InputEmailLogin" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="InputEmailLogin" />
-            </div>
-            <div class="mb-3">
-              <label for="InputPasswordLogin" class="form-label">Password</label>
-              <input type="password" class="form-control" id="InputPasswordLogin" />
-            </div>
-            <button type="submit" class="btn text-white w-100 main-button">Login</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <!-- Scroll Button -->
     <a href="#bottom" class="btn scroll-bottom-btn position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 64px; height: 64px; border-radius: 50%; z-index: 1050;" title="Scroll to bottom">
